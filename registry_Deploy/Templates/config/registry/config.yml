@@ -1,0 +1,38 @@
+version: 0.1
+log:
+  fields:
+    service: registry
+storage:
+    cache:
+        blobdescriptor: inmemory
+    filesystem:
+        rootdirectory: /var/lib/registry
+    delete:
+        enabled: true
+http:
+    addr: :5002
+    secret: asecretforlocaldevelopment
+    headers:
+        X-Content-Type-Options: [nosniff]
+health:
+  storagedriver:
+    enabled: true
+    interval: 10s
+    threshold: 3
+
+notifications:
+  endpoints:
+    - name: Fanny
+      url: http://PrivateRegistryHostIP:9182/event
+      headers:
+        Authorization: ["Bearer $2y$05$LO.vzwpWC5LZGqThvEfznu8qhb5SGqvBSWY1J3yZ4AxtMRZ3kN5jC"]
+      timeout: 500ms
+      threshold: 5
+      backoff: 1s
+
+auth:
+  token:
+    realm: http://PrivateRegistryHostIP:9182/auth
+    service: Docker registry
+    issuer: Acme auth server
+    rootcertbundle: /ssl/server.crt

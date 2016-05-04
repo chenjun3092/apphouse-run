@@ -1,0 +1,54 @@
+registry_collector_auth:
+  restart: always
+  ports:
+    - 9182:9182/tcp
+    - 9185:9185/tcp
+    - 27017:27017/tcp
+  image: 120.76.41.28:5002/youruncloud/registry_collector_auth:0.8.8
+  volumes:
+    - <configPath>/registry_collector/config.conf:/opt/source/frame/conf/config.conf
+    - <configPath>/registry_collector/logs/operation.log:/opt/source/Trace/logs/web.log
+    - <storagePath>/registry_collector/mongodb/data:/opt/mongodb/data
+    - <configPath>/registry_collector/conf/mongodb_linux.conf:/opt/source/mongodb/conf/mongodb_linux.conf
+    - <storagePath>:/.hidden/root:ro
+    - /proc:/host/proc:ro
+    - /etc/localtime:/etc/localtime:ro
+registryui:
+  restart: always
+  ports:
+    - 80:80/tcp
+    - 443:443/tcp
+  links:
+    - registry:registry
+  image: 120.76.41.28:5002/youruncloud/registry_ui:0.8.2
+  volumes:
+    - <configPath>/nginx_conf:/etc/nginx/conf.d
+registry:
+  restart: always
+  ports:
+    - 5002:5002/tcp
+  image: 120.76.41.28:5002/youruncloud/registry:2.3.0
+  volumes:
+    - <configPath>/registry/config.yml:/etc/docker/registry/config.yml
+    - <configPath>/registry/docker_auth/ssl:/ssl
+    - <storagePath>/registry/storage:/var/lib/registry
+elasticsearch:
+  restart: always
+  image: 120.76.41.28:5002/youruncloud/elasticsearch:0.8
+  volumes:
+    - <configPath>/docker_el/elasticsearch/config/elasticsearch.yml:/elasticsearch/config/elasticsearch.yml
+    - <storagePath>/docker_el/elasticsearch/storage:/elasticsearch/data
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+    - "9443:9443"
+logstash:
+  restart: always
+  image: 120.76.41.28:5002/youruncloud/logstash:0.8
+  command: logstash -f /etc/logstash/conf.d/logstash.conf
+  volumes:
+    - <configPath>/docker_el/logstash/config/logstash.conf:/etc/logstash/conf.d/logstash.conf
+    - <configPath>/registry_collector/logs/operation.log:/usr/share/logstash/log/collector_auth_operation.log
+  links:
+    - elasticsearch
+    - registry_collector_auth
