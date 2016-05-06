@@ -29,5 +29,5 @@ docker run --privileged=true \
     -v /var/lib/docker:/var/lib/docker \
     -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
     -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
-    120.76.41.28:5002/youruncloud/apphouse:v0.8.9
+    index.alauda.cn/cloudsoar/apphouse:v1.0.0.092
 

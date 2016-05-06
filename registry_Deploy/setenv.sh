@@ -25,8 +25,9 @@ if [ -f ./install/config/docker-compose.yml ]; then
 fi
 cp -rf ./Templates/storage/* ./install/storage
 
-# sed -i "s#<configPath>#$CONFIG_PATH#g" $composeYml
-# sed -i "s#<storagePath>#$STORAGE_PATH#g" $composeYml
+sed -i "s#<IMAGE_ADDR>#$IMAGE_ADDR#g" $composeYml
+sed -i "s#<configPath>#$CONFIG_PATH#g" $composeYml
+sed -i "s#<storagePath>#$STORAGE_PATH#g" $composeYml
 # sed -i "s#<UI_IMAGE>#$UI_IMAGE#g" $composeYml
 # sed -i "s#<REGISTRY_IMAGE>#$REGISTRY_IMAGE#g" $composeYml
 # sed -i "s#<AUTH_IMAGE>#$AUTH_IMAGE#g" $composeYml

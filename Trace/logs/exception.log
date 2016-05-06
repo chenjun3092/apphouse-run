@@ -1,0 +1,423 @@
+
+2016-05-06 17:43:55
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apiauthen.py", line 112, in verify_token
+  File "src/frame/authen.py", line 210, in check_token
+  File "src/frame/authen.py", line 243, in verify_sec_key
+  File "src/api/apiauthen.py", line 83, in get_access_key
+OPException: 'User[admin] did not login'
+
+2016-05-06 17:44:32
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:44:35
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:44:38
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:44:41
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:44:47
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:44:50
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:44:53
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:44:56
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:44:59
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:02
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:05
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:08
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:11
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:14
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:17
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:20
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:23
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:26
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:29
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:32
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:45:35
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:02
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:05
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:08
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:11
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:14
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:17
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:20
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:23
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:26
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:29
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:32
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:35
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:38
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:41
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:44
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:47
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:50
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:53
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:56
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:46:59
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:02
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:05
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:08
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:11
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:14
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:17
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:20
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:23
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:26
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:29
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:32
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:35
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:38
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:41
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:44
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:47
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:50
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:53
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:56
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:47:59
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:48:02
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:48:05
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:48:08
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:48:11
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:48:14
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:48:17
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:48:20
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)
+
+2016-05-06 17:48:23
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src/api/apihandler.py", line 122, in dispatch
+TypeError: netifs() takes exactly 1 argument (2 given)

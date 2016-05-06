@@ -1,0 +1,411 @@
+
+    解决普通用户不显示全部可pull镜像的问题
+
+    解决命名空间排序不对的问题
+
+    解决复制的Tag不显示下载次数的问题
+
+    解决普通用户页面部分public命名空间不显示的问题
+
+    解决修改用户组时，不显示用户组名称的问题
+
+    解决修改密码，密码错误时返回错误码会让客户端登出的问题
+
+    修改网络信息BUG，修改描述人信息BUG
+
+    解决更新docker file的时候，附加的文件信息也保存进数据库的问题
+
+    实现用户权限控制
+
+    用户权限用数字记录
+
+    解决界面出现重复tag的问题
+
+    解决私有的命名空间下，tag详细信息页面，显示为public的问题
+
+    支持分页
+
+    取消Token的时间检查，只做正确性检查
+
+    解决权限控制的bug
+
+    给Tag排序
+
+    解决复制Tag没有创建数据库记录的问题
+
+    将用户权限检查的逻辑提取到一个文件中处理
+
+    修改smtp默认配置
+
+    解决客户端给命名空间添加用户组之后，不显示用户组名称的问题
+
+    合入对token的检查
+
+commit 1f0aceaeaf6af0e2acae79c4e9ae814501858149
+Author: LuckStone <shaojun_d@126.com>
+Date:   Sat Apr 30 17:17:15 2016 +0800
+
+    将错误码加入返回结果的head中Result-Code
+
+commit 75f5fe87ba4bb64b677ed8a7fca9d88cdeff4567
+Author: LuckStone <shaojun_d@126.com>
+Date:   Sat Apr 30 17:08:27 2016 +0800
+
+    支持未登录用户pull public命名空间下的镜像
+
+commit b0161b349e1c285511662727858c8c49eb4ba100
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 29 19:30:10 2016 +0800
+
+    解决docker demo登录报错的问题
+
+commit ce05a054a8d876dfaa9daa280d7fea4b10c70a83
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 29 17:21:08 2016 +0800
+
+    解决发送邮件存在的问题
+
+commit 7f93f55692cc67714ea33dc9982e571d5b9fcadb
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 29 16:48:10 2016 +0800
+
+    解决发送邮件存在的问题
+
+commit e6263e843994db2d9e4a8fea7e35eeb0f348f9d5
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 29 15:38:57 2016 +0800
+
+    支持ldap用户登录
+
+commit 25aa8a6a8a1115eddb516fa12cf7df8d8687c593
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 29 15:20:46 2016 +0800
+
+    解决镜像的属性与项目中的属性不一致问题
+
+commit a9bfd3141aa0d4fd561d560758365ad1e0c0c3fa
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 29 15:03:27 2016 +0800
+
+    解决用户组中用户不能删除的问题
+
+commit 2b2c5408757e76cbe0e3b3589db476a2d92a1aa3
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 29 11:23:35 2016 +0800
+
+    解决public的命名空间，权限控制错误的问题
+
+commit f9b90a50e081bb0a13bd93ae0322f8ed55149b3f
+Author: LuckStone <shaojun_d@126.com>
+Date:   Thu Apr 28 15:14:36 2016 +0800
+
+    支持对用户ID模糊匹配
+
+commit 0eea362e9378d11854919d9559fc54691fe8a5a0
+Author: LuckStone <shaojun_d@126.com>
+Date:   Thu Apr 28 14:57:15 2016 +0800
+
+    合并路由，在一个进程里面处理两种请求
+
+commit 3905ab8ee4b22968c29f84f0cfc090c5e92cfe0b
+Author: LuckStone <shaojun_d@126.com>
+Date:   Thu Apr 28 11:30:56 2016 +0800
+
+    系统启动的时候自动初始化数据库
+
+commit 89e132d4e9563e6155a123cc9e85078e38a6fe4e
+Author: LuckStone <shaojun_d@126.com>
+Date:   Thu Apr 28 11:16:32 2016 +0800
+
+    解决导入数据中文字符导致安装失败的问题
+
+commit 30070f40a30afd12d1c436c5473753141791b24c
+Author: LuckStone <shaojun_d@126.com>
+Date:   Thu Apr 28 11:07:51 2016 +0800
+
+    解决代码编译成pyc后安装报错的问题
+
+commit 21a4af59161e03ded2d29e15c7a75880704d548b
+Author: LuckStone <shaojun_d@126.com>
+Date:   Thu Apr 28 10:58:39 2016 +0800
+
+    提交代码
+
+commit 2738dcb8d676c5a4a4545e6e2c0d6f9f6ab233df
+Author: LuckStone <shaojun_d@126.com>
+Date:   Thu Apr 28 10:51:38 2016 +0800
+
+    合入代码
+
+commit e13eb19450e96dc7e7fe2aea3f0ea0852fc4bec4
+Author: LuckStone <shaojun_d@126.com>
+Date:   Thu Apr 28 10:21:27 2016 +0800
+
+    合入发送邮件功能
+
+commit 674d7a99a9a54711c8fe96db7a2ea6a1fc04dbf7
+Author: LuckStone <shaojun_d@126.com>
+Date:   Tue Apr 26 16:53:57 2016 +0800
+
+    合入编译脚本，生成pyc文件，然后删除py文件
+
+commit 6c4e06167a28827d39ae31e2f9a9f7159e5e4a62
+Author: LuckStone <shaojun_d@126.com>
+Date:   Tue Apr 26 14:10:09 2016 +0800
+
+    合入ldap代码
+
+commit 93a748a60dab059ba78757e91b4085141f94eb70
+Merge: c7ee9cf 99a98f2
+Author: LuckStone <shaojun_d@126.com>
+Date:   Tue Apr 26 14:06:03 2016 +0800
+
+    Merge branch 'master' of ssh://gitlab.example.com:2289/dengshaojun/collector
+
+commit 99a98f20ba8d6e094b6218bf71459e97bd8ab5d4
+Author: chenjun3092 <20100688@qq.com>
+Date:   Tue Apr 26 11:29:24 2016 +0800
+
+    优化获取主机内存信息方法
+
+commit c7ee9cfe121fd995043ce6e3912f586f6a7efd07
+Author: LuckStone <shaojun_d@126.com>
+Date:   Mon Apr 25 10:05:33 2016 +0800
+
+    public的命名空间，所有用户都有pull权限
+
+commit 9b8562edf113735bcd2095c51a8eba97fdaa611d
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 22 20:42:02 2016 +0800
+
+    解决用户组最后一个用户不能删除的问题
+
+commit 06bf0198fa9e02960c970f6cab1408bd4361d478
+Author: chenjun3092 <20100688@qq.com>
+Date:   Fri Apr 22 19:53:10 2016 +0800
+
+    删除用户关系……
+
+commit 51731508e7e4863a49bda7ed4572d3fc1b1e4ebf
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 22 19:35:08 2016 +0800
+
+    合入启动https服务的脚本
+
+commit 147aac2d5416ab3c7440f73be0cc08e89472ac04
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 22 19:19:35 2016 +0800
+
+    实现对openssl支持
+
+commit c51364d22e18cd5360560622680ac9c14f27e1b2
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 22 17:37:05 2016 +0800
+
+    增加一份用于web展示的日志
+
+commit b2acc180424cb582478ac4bd98fe29251bd94ff1
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 22 16:28:47 2016 +0800
+
+    减少对第三方库的依赖
+
+commit 7c2da6f3f3bdcc97b12bb94bb0434d3743e4eb32
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 22 16:09:05 2016 +0800
+
+    解决pull次数不准确的问题
+
+commit 66505468efd27dcebdc7a2c69a53afa446b9b173
+Author: LuckStone <shaojun_d@126.com>
+Date:   Thu Apr 21 19:36:39 2016 +0800
+
+    实现跨仓库复制
+
+commit c613a14c322fed5ec608b4b74c1ad3bcd8902558
+Author: LuckStone <shaojun_d@126.com>
+Date:   Thu Apr 21 10:45:34 2016 +0800
+
+    合入menifest签名的代码
+
+commit d7357f4d99955f5ac8ec707589e0193ea79f7942
+Author: LuckStone <shaojun_d@126.com>
+Date:   Tue Apr 19 11:49:59 2016 +0800
+
+    保存image的配置文件digest
+
+commit 0015900bef4aab45d4c76215d31d1676e06c204d
+Author: LuckStone <shaojun_d@126.com>
+Date:   Tue Apr 19 11:18:27 2016 +0800
+
+    解决保存层信息报错的问题
+
+commit b18f2c8b05b81ff804e5dcf076031282e43832a8
+Author: LuckStone <shaojun_d@126.com>
+Date:   Tue Apr 19 09:33:49 2016 +0800
+
+    删除eclipse自动创建的文件
+
+commit db6a1f218942d982c9b79abae75a2100ca8c140b
+Author: LuckStone <shaojun_d@126.com>
+Date:   Tue Apr 19 09:32:21 2016 +0800
+
+    恢复标记代码是否安装的文件
+
+commit 8d1a3ac596ffd1089e00be889f6a19a6d311c5be
+Author: LuckStone <shaojun_d@126.com>
+Date:   Mon Apr 18 20:33:12 2016 +0800
+
+    解决删除命名空间测试发现的问题
+
+commit c03acf995e612ff4cf91389b90a64dfa294b846d
+Author: chenjun3092 <20100688@qq.com>
+Date:   Mon Apr 18 19:56:09 2016 +0800
+
+    fix some bug
+
+commit 34de2f9bc7ff884b345d71419f575c1a485652b8
+Author: chenjun3092 <20100688@qq.com>
+Date:   Mon Apr 18 19:52:45 2016 +0800
+
+    fix some bug
+
+commit aa73d396ff41f8f72e19ca5a876c38c08f58df63
+Author: LuckStone <shaojun_d@126.com>
+Date:   Mon Apr 18 11:37:31 2016 +0800
+
+    查询用户列表的时候，返回每个用户所属的用户组数
+
+commit 31ff3bef174d893e135853f1409228ea96ab696c
+Author: LuckStone <shaojun_d@126.com>
+Date:   Mon Apr 18 11:20:26 2016 +0800
+
+    解决按命名空间查找group返回结果不对的问题
+
+commit ef617f218e2ce0da3f420492b8d0fa8b7bea19db
+Merge: cf8fc29 e293319
+Author: LuckStone <shaojun_d@126.com>
+Date:   Sun Apr 17 23:07:17 2016 +0800
+
+    Merge branch 'master' of ssh://gitlab.example.com:2289/dengshaojun/collector
+
+commit e293319d39907aa2e248421be41e14e4a5c41270
+Author: chenjun3092 <20100688@qq.com>
+Date:   Sat Apr 16 18:03:24 2016 +0800
+
+    增加修改密码，获取PULL镜像domain字符串接口
+
+    修改显示对应存储路径磁硬信息
+
+commit cf8fc29248ea20cb62e8522f4e35b573b21be169
+Author: LuckStone <shaojun_d@126.com>
+Date:   Sat Apr 16 03:46:03 2016 +0800
+
+    解决管理员不能查看全部的Repository的问题【临时方案】
+
+commit 4ba3a5596b5efc1e3298513b3fad0b199e133cc3
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 15 04:17:00 2016 +0800
+
+    解决测试发现的问题
+
+commit b5421ec994a7c16e3ac16e887f5d46f06551be3c
+Merge: 0ea6e71 8d5aaeb
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 15 04:03:38 2016 +0800
+
+    Merge branch 'master' of ssh://gitlab.example.com:2289/dengshaojun/collector
+
+commit 8d5aaeb09f275d635dc48ebd4c69dedd588a2da9
+Author: chenjun3092 <20100688@qq.com>
+Date:   Fri Apr 15 20:05:56 2016 +0800
+
+    Add edit_record;edit start.sh
+
+commit 0ea6e7105610b942ef271cf6f34112d370ce5095
+Author: LuckStone <shaojun_d@126.com>
+Date:   Fri Apr 15 02:32:18 2016 +0800
+
+    修改host信息的实现
+
+commit c969f095903fe850d60544923876fc170858c53e
+Merge: 89021da 8eaf6d3
+Author: LuckStone <shaojun_d@126.com>
+Date:   Wed Apr 13 20:39:40 2016 +0800
+
+    Merge branch 'master' of ssh://gitlab.example.com:2289/dengshaojun/collector
+
+commit 89021da36a51d1f79b49082e79dc6d891c4195cb
+Author: LuckStone <shaojun_d@126.com>
+Date:   Wed Apr 13 20:38:58 2016 +0800
+
+    registry端删除tag成功时，删除数据库的tag记录
+
+commit 8eaf6d33ccb4e5569d988ae5b4b8002d11d0b91e
+Author: chenjun3092 <20100688@qq.com>
+Date:   Wed Apr 13 20:21:24 2016 +0800
+
+    del logs
+
+commit 959749b579741f23091ceaf94eb305ec3d5ff559
+Author: LuckStone <shaojun_d@126.com>
+Date:   Wed Apr 13 20:14:24 2016 +0800
+
+    解决测试发现的问题
+
+commit 29ca242df25542f8889aca2d782271b647c66e5f
+Merge: 7307b3e 51ec71d
+Author: LuckStone <shaojun_d@126.com>
+Date:   Wed Apr 13 15:25:02 2016 +0800
+
+    Merge branch 'master' of ssh://gitlab.example.com:2289/dengshaojun/collector
+
+commit 51ec71dfd079f8453be6ffa29d8af98d43bfc03e
+Author: chenjun3092 <20100688@qq.com>
+Date:   Wed Apr 13 15:24:21 2016 +0800
+
+    修复BUG
+
+commit 7307b3ee246b347042438a82847e9b9c9a3ea256
+Merge: 68c2334 aeff90e
+Author: LuckStone <shaojun_d@126.com>
+Date:   Wed Apr 13 15:13:54 2016 +0800
+
+    Merge branch 'master' of ssh://gitlab.example.com:2289/dengshaojun/collector
+
+commit 68c233402d9515e1a40d010c6034c8eab91199a2
+Author: LuckStone <shaojun_d@126.com>
+Date:   Wed Apr 13 11:17:21 2016 +0800
+
+    自己生成token， 不再到docker-auth验证
+
+commit aeff90e4d34bdd22881226f3ca6b6372e88ab931
+Author: chenjun3092 <20100688@qq.com>
+Date:   Wed Apr 13 10:23:10 2016 +0800
+
+    新增修改描述功能
+
+commit 566384f35d9729aca5841aa535f4546b54b91781
+Author: LuckStone <shaojun_d@126.com>
+Date:   Wed Apr 13 10:13:14 2016 +0800
+
+    1、实现加密登录；
+    2、实现token处理
+
+commit 922bd015bca9bf75595e844c638fc0f7c3b34963
+Author: chenjun3092 <20100688@qq.com>
+Date:   Tue Apr 12 16:19:14 2016 +0800
+
+    增加python hostinfo，网卡流量接口
+
+commit 723a65db4bd03aa91c3fc3f648fe15692cdf2a8d
+Author: LuckStone <shaojun_d@126.com>
+Date:   Tue Apr 12 09:36:40 2016 +0800
+
+    实现group权限配置
+
+commit d169e9d0267fd9ec43b1b5a619acab7e2a9e6b16
+Author: LuckStone <shaojun_d@126.com>
+Date:   Mon Apr 11 21:05:07 2016 +0800
+
+

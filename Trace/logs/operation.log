@@ -1,0 +1,185 @@
+2016-05-06 17:43:49,623 INFO [24-140469182555904] Connect to db success.
+2016-05-06 17:43:54,980 ERROR [24-140469182555904] init email manager fail.
+2016-05-06 17:43:55,269 INFO [24-140469182555904] WebService Starting completed
+2016-05-06 17:43:56,200 ERROR [24-140468738758400] AuthenMgr.verify_token fail as ['User[admin] did not login']
+2016-05-06 17:43:56,200 DEBUG [24-140468738758400] check token fail
+2016-05-06 17:44:28,815 INFO [24-140468738758400] user[admin] login
+2016-05-06 17:44:28,816 DEBUG [24-140468738758400] login return value <Result<'result':0,'message':'done','return':{'access_key': 'ed87d767-a0f4-4998-aa1f-76eadb4a2915', 'role': 'admin', 'access_uuid': u'admin'}>>
+2016-05-06 17:44:29,302 DEBUG [24-140468738758400] find a network iface[eth0]
+2016-05-06 17:44:29,302 DEBUG [24-140468738758400] netifs return value <Result<'result':0,'message':'done','return':['eth0']>>
+2016-05-06 17:44:29,357 DEBUG [24-140468516026112] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.0', 'dev_version': u'091'}>>
+2016-05-06 17:44:29,374 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709444, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 156136L, u'user': 1.0, 'cpuUsage': 25.3, 'totalDisk': 96094988}>>
+2016-05-06 17:44:32,561 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:44:32,561 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:44:35,557 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:44:35,557 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:44:38,559 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:44:38,559 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:44:39,195 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709232, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 191328L, u'user': 1.0, 'cpuUsage': 27.7, 'totalDisk': 96094988}>>
+2016-05-06 17:44:41,554 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:44:41,554 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:44:44,620 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709272, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 190580L, u'user': 1.0, 'cpuUsage': 33.1, 'totalDisk': 96094988}>>
+2016-05-06 17:44:44,625 DEBUG [24-140468516026112] find a network iface[eth0]
+2016-05-06 17:44:44,625 DEBUG [24-140468516026112] netifs return value <Result<'result':0,'message':'done','return':['eth0']>>
+2016-05-06 17:44:44,679 DEBUG [24-140468738758400] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.0', 'dev_version': u'091'}>>
+2016-05-06 17:44:47,803 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:44:47,803 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:44:50,798 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:44:50,798 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:44:53,795 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:44:53,795 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:44:54,605 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709272, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 191796L, u'user': 1.0, 'cpuUsage': 39.7, 'totalDisk': 96094988}>>
+2016-05-06 17:44:56,797 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:44:56,797 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:44:59,796 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:44:59,796 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:02,810 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:02,810 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:04,596 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709256, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 189864L, u'user': 1.0, 'cpuUsage': 26.7, 'totalDisk': 96094988}>>
+2016-05-06 17:45:05,799 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:05,799 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:08,794 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:08,794 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:11,798 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:11,799 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:14,592 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709244, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 187024L, u'user': 1.0, 'cpuUsage': 32.7, 'totalDisk': 96094988}>>
+2016-05-06 17:45:14,794 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:14,795 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:17,799 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:17,800 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:20,794 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:20,794 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:23,800 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:23,800 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:24,594 DEBUG [24-140468516026112] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709252, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 184132L, u'user': 1.0, 'cpuUsage': 43.8, 'totalDisk': 96094988}>>
+2016-05-06 17:45:26,798 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:26,798 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:29,799 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:29,799 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:32,801 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:32,801 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:34,594 DEBUG [24-140468516026112] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709228, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 181664L, u'user': 1.0, 'cpuUsage': 25.2, 'totalDisk': 96094988}>>
+2016-05-06 17:45:35,793 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:45:35,793 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:45:38,381 DEBUG [24-140468738758400] repositories return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-06 17:45:38,382 DEBUG [24-140468516026112] namespaces return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-06 17:45:38,407 DEBUG [24-140468738758400] domain return value <Result<'result':0,'message':'done','return':{'domain': u'192.168.15.126:5002'}>>
+2016-05-06 17:45:45,678 DEBUG [24-140468516026112] repositories return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-06 17:45:48,757 DEBUG [24-140468738758400] repositories return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-06 17:45:50,926 DEBUG [24-140468516026112] namespaces return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-06 17:45:54,106 DEBUG [24-140468738758400] groups return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-06 17:45:56,242 DEBUG [24-140468516026112] groups return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-06 17:45:56,253 DEBUG [24-140468738758400] accounts return value <Result<'result':0,'message':'done','return':[{u'nick_name': u'admin', u'source': u'local', u'role': u'ring0', u'avatar': u'', u'_id': u'admin', u'join_time': u'1457958007295', u'group_num': 0.0}]>>
+2016-05-06 17:45:59,352 DEBUG [24-140468516026112] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709216, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 179388L, u'user': 1.0, 'cpuUsage': 32.3, 'totalDisk': 96094988}>>
+2016-05-06 17:45:59,353 DEBUG [24-140468738758400] find a network iface[eth0]
+2016-05-06 17:45:59,353 DEBUG [24-140468738758400] netifs return value <Result<'result':0,'message':'done','return':['eth0']>>
+2016-05-06 17:46:02,425 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:02,426 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:05,422 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:05,423 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:08,425 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:08,426 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:09,346 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709204, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 179568L, u'user': 1.0, 'cpuUsage': 30.2, 'totalDisk': 96094988}>>
+2016-05-06 17:46:11,429 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:11,429 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:14,423 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:14,423 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:17,421 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:17,421 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:19,346 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709196, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 159748L, u'user': 1.0, 'cpuUsage': 36.9, 'totalDisk': 96094988}>>
+2016-05-06 17:46:20,422 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:20,422 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:23,422 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:23,423 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:26,419 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:26,420 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:29,337 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709168, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 175348L, u'user': 1.0, 'cpuUsage': 34.7, 'totalDisk': 96094988}>>
+2016-05-06 17:46:29,422 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:29,422 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:32,421 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:32,421 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:35,423 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:35,424 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:38,425 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:38,426 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:39,341 DEBUG [24-140468516026112] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709180, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 168676L, u'user': 1.0, 'cpuUsage': 34.6, 'totalDisk': 96094988}>>
+2016-05-06 17:46:41,419 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:41,419 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:44,426 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:44,426 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:47,421 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:47,422 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:49,342 DEBUG [24-140468516026112] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709168, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 167892L, u'user': 1.0, 'cpuUsage': 31.4, 'totalDisk': 96094988}>>
+2016-05-06 17:46:50,424 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:50,425 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:53,425 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:53,425 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:56,420 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:56,420 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:46:59,337 DEBUG [24-140468516026112] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709160, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 170872L, u'user': 1.0, 'cpuUsage': 29.0, 'totalDisk': 96094988}>>
+2016-05-06 17:46:59,419 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:46:59,420 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:02,422 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:02,422 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:05,424 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:05,425 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:08,421 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:08,421 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:09,344 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709156, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 178680L, u'user': 1.0, 'cpuUsage': 33.4, 'totalDisk': 96094988}>>
+2016-05-06 17:47:11,426 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:11,426 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:14,424 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:14,424 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:17,421 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:17,421 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:19,341 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709140, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 173340L, u'user': 1.0, 'cpuUsage': 25.5, 'totalDisk': 96094988}>>
+2016-05-06 17:47:20,426 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:20,426 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:23,425 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:23,425 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:26,426 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:26,426 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:29,340 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709140, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 177920L, u'user': 1.0, 'cpuUsage': 29.6, 'totalDisk': 96094988}>>
+2016-05-06 17:47:29,418 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:29,418 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:32,424 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:32,424 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:35,428 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:35,429 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:38,425 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:38,425 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:39,344 DEBUG [24-140468516026112] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709100, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 187436L, u'user': 1.0, 'cpuUsage': 36.6, 'totalDisk': 96094988}>>
+2016-05-06 17:47:41,424 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:41,424 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:44,415 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:44,415 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:47,420 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:47,420 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:49,344 DEBUG [24-140468516026112] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709128, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 171532L, u'user': 1.0, 'cpuUsage': 24.2, 'totalDisk': 96094988}>>
+2016-05-06 17:47:50,420 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:50,420 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:53,421 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:53,421 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:56,421 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:56,422 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:47:59,338 DEBUG [24-140468516026112] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709108, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 172336L, u'user': 1.0, 'cpuUsage': 31.8, 'totalDisk': 96094988}>>
+2016-05-06 17:47:59,421 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:47:59,421 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:48:02,426 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:48:02,426 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:48:05,422 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:48:05,422 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:48:08,424 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:48:08,424 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:48:09,345 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709084, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 178892L, u'user': 1.0, 'cpuUsage': 34.3, 'totalDisk': 96094988}>>
+2016-05-06 17:48:11,424 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:48:11,424 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:48:14,424 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:48:14,424 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:48:17,420 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:48:17,420 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:48:19,344 DEBUG [24-140468738758400] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 77709092, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 173040L, u'user': 1.0, 'cpuUsage': 22.6, 'totalDisk': 96094988}>>
+2016-05-06 17:48:20,426 ERROR [24-140468516026112] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:48:20,427 DEBUG [24-140468516026112] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
+2016-05-06 17:48:23,428 ERROR [24-140468738758400] error:netifs() takes exactly 1 argument (2 given)
+2016-05-06 17:48:23,428 DEBUG [24-140468738758400] netifs return value <Result<'result':10207,'message':'internal errors','return':0>>
