@@ -1,5 +1,7 @@
 registry_collector_auth:
   restart: always
+  stdin_open: true
+  tty: true
   ports:
     - 9182:9182/tcp
     - 9185:9185/tcp
@@ -15,6 +17,8 @@ registry_collector_auth:
     - /etc/localtime:/etc/localtime:ro
 registryui:
   restart: always
+  stdin_open: true
+  tty: true
   ports:
     - 80:80/tcp
     - 443:443/tcp
@@ -25,6 +29,8 @@ registryui:
     - <configPath>/nginx_conf:/etc/nginx/conf.d
 registry:
   restart: always
+  stdin_open: true
+  tty: true
   ports:
     - 5002:5002/tcp
   image: index.alauda.cn/cloudsoar/registry:2.3.0
@@ -34,6 +40,8 @@ registry:
     - <storagePath>/registry/storage:/var/lib/registry
 elasticsearch:
   restart: always
+  stdin_open: true
+  tty: true
   image: index.alauda.cn/cloudsoar/elasticsearch:0.8
   volumes:
     - <configPath>/docker_el/elasticsearch/config/elasticsearch.yml:/elasticsearch/config/elasticsearch.yml
@@ -44,6 +52,8 @@ elasticsearch:
     - "9443:9443"
 logstash:
   restart: always
+  stdin_open: true
+  tty: true
   image: index.alauda.cn/cloudsoar/logstash:0.8
   command: logstash -f /etc/logstash/conf.d/logstash.conf
   volumes:

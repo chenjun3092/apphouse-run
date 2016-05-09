@@ -29,5 +29,5 @@ docker run --privileged=true \
     -v /var/lib/docker:/var/lib/docker \
     -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
     -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
-    index.alauda.cn/cloudsoar/apphouse:v1.0.0.092
+    apphouse:v1.0.0.093
 

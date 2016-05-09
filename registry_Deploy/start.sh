@@ -8,14 +8,11 @@
 set -e
 
 
-License_display="
+Welcome_display="
 --------------------------------------------------------------\n
-Welcome to use AppHouse, you can access private repository via\n
-https://<YourHostIP>\n
-If you have any questions, please access www.youruncloud.com,\n
-thanks.\n
+Welcome to use AppHouse!\n
 --------------------------------------------------------------\n"
-echo -e $License_display
+echo -e $Welcome_display
 
 docker version
 if [ $? -ne 0 ];then
@@ -73,3 +70,16 @@ export STORAGE_PATH=$storagePath
 cd $DEPLOY_PATH/install
 
 $VENV_BIN/docker-compose up -d
+
+wait
+
+License_display="
+--------------------------------------------------------------\n
+Install Success, you can access private repository via\n
+http://<YourHostIP>\n
+If you have any questions, please access www.youruncloud.com,\n
+thanks.\n
+--------------------------------------------------------------\n"
+echo -e $License_display
+
+exit 0
