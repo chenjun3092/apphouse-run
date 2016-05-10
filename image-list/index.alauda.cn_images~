@@ -43,12 +43,12 @@ index.alauda.cn/youruncloud/logstash:0.8
 index.alauda.cn/youruncloud/apphouse:v1.0.0.095
 
 v1.0.0.095 pro镜像列表(未上传)：
-index.youruncloud.com/apphouse/registry_collector_auth:v1.0.0.095
-index.youruncloud.com/apphouse/registry_ui:0.8.5
-index.youruncloud.com/apphouse/registry:2.3.0
-index.youruncloud.com/apphouse/elasticsearch:0.8
-index.youruncloud.com/apphouse/logstash:0.8
-index.youruncloud.com/apphouse/apphouse:v1.0.0.095
+index.youruncloud.com/registry_collector_auth:v1.0.0.095
+index.youruncloud.com/registry_ui:0.8.5
+index.youruncloud.com/registry:2.3.0
+index.youruncloud.com/elasticsearch:0.8
+index.youruncloud.com/logstash:0.8
+index.youruncloud.com/apphouse:v1.0.0.095
 
 
 

@@ -73,7 +73,8 @@ Wait_notes="
  --------------------------------------------------------------\n
 Start run AppHouse!
 This may take a long time to download images. \n
-Please wait for completion...\n
+Please wait for completion!\n
+......\n
 --------------------------------------------------------------\n"
 echo -e $Wait_notes
 
