@@ -34,6 +34,14 @@ index.alauda.cn/cloudsoar/elasticsearch:0.8
 index.alauda.cn/cloudsoar/logstash:0.8
 index.alauda.cn/cloudsoar/apphouse:v1.0.0.092
 
+v1.0.0.095 dev镜像列表(未上传)：
+index.alauda.cn/youruncloud/registry_collector_auth:v1.0.0.095
+index.alauda.cn/youruncloud/registry_ui:0.8.5
+index.alauda.cn/youruncloud/registry:2.3.0
+index.alauda.cn/youruncloud/elasticsearch:0.8
+index.alauda.cn/youruncloud/logstash:0.8
+index.alauda.cn/youruncloud/apphouse:v1.0.0.095
+
 
 
 遇到的问题：
