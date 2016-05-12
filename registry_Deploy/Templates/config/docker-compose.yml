@@ -5,7 +5,7 @@ registry_collector_auth:
   ports:
     - 9182:9182/tcp
     - 27017:27017/tcp
-  image: registry_collector_auth:v1.0.0.095
+  image: index.youruncloud.com/apphouse/registry_collector_auth:0.9.6
   volumes:
     - <configPath>/registry_collector/config.conf:/opt/source/frame/conf/config.conf
     - <configPath>/registry_collector/dbconf/mongodb_linux.conf:/opt/source/mongodb/conf/mongodb_linux.conf
@@ -25,7 +25,7 @@ registryui:
     - 443:443/tcp
   links:
     - registry:registry
-  image: index.alauda.cn/cloudsoar/registry_ui:0.8.4
+  image: index.youruncloud.com/apphouse/registry_ui:0.8.6
   volumes:
     - <configPath>/nginx_conf:/etc/nginx/conf.d
 registry:
@@ -34,7 +34,7 @@ registry:
   tty: true
   ports:
     - 5002:5002/tcp
-  image: index.alauda.cn/cloudsoar/registry:2.3.0
+  image: index.youruncloud.com/apphouse/registry:2.3.0
   volumes:
     - <configPath>/registry/config.yml:/etc/docker/registry/config.yml
     - <configPath>/nginx_conf/ssl_auth:/ssl
@@ -43,7 +43,7 @@ elasticsearch:
   restart: always
   stdin_open: true
   tty: true
-  image: index.alauda.cn/cloudsoar/elasticsearch:0.8
+  image: index.youruncloud.com/apphouse/elasticsearch:0.8
   volumes:
     - <configPath>/docker_el/elasticsearch/config/elasticsearch.yml:/elasticsearch/config/elasticsearch.yml
     - <storagePath>/docker_el/elasticsearch/storage:/elasticsearch/data
@@ -54,7 +54,7 @@ logstash:
   restart: always
   stdin_open: true
   tty: true
-  image: index.alauda.cn/cloudsoar/logstash:0.8
+  image: index.youruncloud.com/apphouse/logstash:0.8
   command: logstash -f /etc/logstash/conf.d/logstash.conf
   volumes:
     - <configPath>/docker_el/logstash/config/logstash.conf:/etc/logstash/conf.d/logstash.conf

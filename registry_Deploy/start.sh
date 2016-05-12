@@ -8,8 +8,8 @@
 set -e
 
 
-Welcome_display="
- --------------------------------------------------------------\n
+Welcome_display="\n
+--------------------------------------------------------------\n
 Welcome to use AppHouse!\n
 --------------------------------------------------------------\n"
 echo -e $Welcome_display
@@ -69,8 +69,8 @@ export STORAGE_PATH=$storagePath
 . $DEPLOY_PATH/setenv.sh -ip $HOST_IP
 cd $DEPLOY_PATH/install
 
-Wait_notes="
- --------------------------------------------------------------\n
+Wait_notes="\n
+--------------------------------------------------------------\n
 Start run AppHouse!
 This may take a long time to download images. \n
 Please wait for completion...\n
@@ -81,8 +81,8 @@ $VENV_BIN/docker-compose up -d
 
 wait
 
-License_display="
- --------------------------------------------------------------\n
+License_display="\n
+--------------------------------------------------------------\n
 Install Success, you can access private repository via\n
 http://<YourHostIP>\n
 If you have any questions, please access www.youruncloud.com,\n
