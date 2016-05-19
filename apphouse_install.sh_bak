@@ -9,6 +9,7 @@ fi
 
 count=1
 while [ "$#" -ge "1" ];do
+    echo $1
     if [ $1 = "-ip" ];then
         shift
         IP=$1
@@ -18,15 +19,26 @@ while [ "$#" -ge "1" ];do
             exit 1
         fi
     fi
+    if [ $1 = "-path" ];then
+        shift
+        installPath=$1
+        echo "installPath = $installPath"
+    fi
     let count=count+1
     shift
 done
+
+if [ ! "installPath" ]; then
+    installPath="/var/local/apphouse"
+    echo "$installPath"
+fi
 
 docker run --privileged=true \
     -e HOST_IP=$IP \
     -e APPHOUSE_DEV=true \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v /var/lib/docker:/var/lib/docker \
-    -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
-    -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
-    index.alauda.cn/youruncloud/apphouse:v1.0.1.099
+    -v $installPath/config:/var/lib/registry_Deploy/install/config \
+    -v $installPath/apphouse/storage:/var/lib/registry_Deploy/install/storage \
+    index.alauda.cn/youruncloud/apphouse:v1.0.1.098
+

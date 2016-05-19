@@ -6,10 +6,8 @@ COPY ./registry_Deploy  /var/lib/registry_Deploy
 
 ENV DEPLOY_PATH /var/lib/registry_Deploy
 
-RUN chmod +x /var/lib/registry_Deploy/setenv.sh
-
-#COPY ./start.sh /var/lib/registry_Deploy/
-RUN chmod +x /var/lib/registry_Deploy/start.sh
+RUN chmod +x /var/lib/registry_Deploy/setenv.sh && \
+    chmod +x /var/lib/registry_Deploy/start.sh
 
 #VOLUME ["/var/run/docker.sock"]
 #VOLUME ["/var/lib/registry_Deploy/config"]

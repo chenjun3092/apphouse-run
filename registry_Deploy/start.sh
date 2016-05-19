@@ -8,7 +8,7 @@
 set -e
 
 
-Welcome_display="
+Welcome_display="\n
 --------------------------------------------------------------\n
 Welcome to use AppHouse!\n
 --------------------------------------------------------------\n"
@@ -31,6 +31,7 @@ if [ -z $configPath ] || [ -z $storagePath ];then
     echo "-v <hostStorageLocation>:/var/lib/registry_Deploy/storage"
     exit 1
 fi
+
 
 # AUTH_IMAGE="index.alauda.cn/cloudsoar/registry_collector_auth:0.8.8"
 # UI_IMAGE="index.alauda.cn/cloudsoar/registry_ui:0.8.2"
@@ -63,17 +64,37 @@ fi
     # exit 1
 # fi
 
+# echo "$APPHOUSE_DEV"
+
+# if [ "$DEV" -eq "true" -o "$DEV" -eq "TRUE" ]; then
+if [ "$APPHOUSE_DEV" ]; then
+    image_prefix="index.alauda.cn/youruncloud"
+    # echo "$image_prefix"
+else
+    image_prefix="index.youruncloud.com/apphouse"
+    # echo "$image_prefix"
+fi
+
 export CONFIG_PATH=$configPath
 export STORAGE_PATH=$storagePath
+export IMAGE_PREFIX=$image_prefix
 
 . $DEPLOY_PATH/setenv.sh -ip $HOST_IP
 cd $DEPLOY_PATH/install
+
+Wait_notes="\n
+--------------------------------------------------------------\n
+Start run AppHouse!
+This may take a long time to ready images. \n
+Please wait for completion...\n
+--------------------------------------------------------------\n"
+echo -e $Wait_notes
 
 $VENV_BIN/docker-compose up -d
 
 wait
 
-License_display="
+License_display="\n
 --------------------------------------------------------------\n
 Install Success, you can access private repository via\n
 http://<YourHostIP>\n

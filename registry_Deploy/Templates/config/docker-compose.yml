@@ -4,14 +4,15 @@ registry_collector_auth:
   tty: true
   ports:
     - 9182:9182/tcp
-    - 9185:9185/tcp
     - 27017:27017/tcp
-  image: index.alauda.cn/cloudsoar/registry_collector_auth:0.9.2
+  image: <image_prefix>/registry_collector_auth:v1.0.1.098.097
   volumes:
     - <configPath>/registry_collector/config.conf:/opt/source/frame/conf/config.conf
-    - <configPath>/registry_collector/logs/operation.log:/opt/source/Trace/logs/web.log
+    - <configPath>/registry_collector/dbconf/mongodb_linux.conf:/opt/source/mongodb/conf/mongodb_linux.conf
+    - <configPath>/nginx_conf/ssl_auth:/opt/source/frame/ssl
+    - <configPath>/registry_collector/hosts:/etc/hosts
     - <storagePath>/registry_collector/mongodb/data:/opt/mongodb/data
-    - <configPath>/registry_collector/conf/mongodb_linux.conf:/opt/source/mongodb/conf/mongodb_linux.conf
+    - <storagePath>/registry_collector/logs/operation.log:/opt/source/Trace/logs/web.log
     - <storagePath>:/.hidden/root:ro
     - /proc:/host/proc:ro
     - /etc/localtime:/etc/localtime:ro
@@ -24,7 +25,7 @@ registryui:
     - 443:443/tcp
   links:
     - registry:registry
-  image: index.alauda.cn/cloudsoar/registry_ui:0.8.4
+  image: <image_prefix>/registry_ui:v1.0.1.098.088
   volumes:
     - <configPath>/nginx_conf:/etc/nginx/conf.d
 registry:
@@ -33,32 +34,31 @@ registry:
   tty: true
   ports:
     - 5002:5002/tcp
-  image: index.alauda.cn/cloudsoar/registry:2.3.0
+  image: <image_prefix>/registry:v1.0.1.098.230
   volumes:
     - <configPath>/registry/config.yml:/etc/docker/registry/config.yml
-    - <configPath>/registry/docker_auth/ssl:/ssl
+    - <configPath>/nginx_conf/ssl_auth:/ssl
     - <storagePath>/registry/storage:/var/lib/registry
 elasticsearch:
   restart: always
   stdin_open: true
   tty: true
-  image: index.alauda.cn/cloudsoar/elasticsearch:0.8
+  image: <image_prefix>/elasticsearch:v1.0.1.098.08
   volumes:
     - <configPath>/docker_el/elasticsearch/config/elasticsearch.yml:/elasticsearch/config/elasticsearch.yml
     - <storagePath>/docker_el/elasticsearch/storage:/elasticsearch/data
   ports:
     - "9200:9200"
     - "9300:9300"
-    - "9443:9443"
 logstash:
   restart: always
   stdin_open: true
   tty: true
-  image: index.alauda.cn/cloudsoar/logstash:0.8
+  image: <image_prefix>/logstash:v1.0.1.098.08
   command: logstash -f /etc/logstash/conf.d/logstash.conf
   volumes:
     - <configPath>/docker_el/logstash/config/logstash.conf:/etc/logstash/conf.d/logstash.conf
-    - <configPath>/registry_collector/logs/operation.log:/usr/share/logstash/log/collector_auth_operation.log
+    - <storagePath>/registry_collector/logs/operation.log:/usr/share/logstash/log/collector_auth_operation.log
   links:
     - elasticsearch
     - registry_collector_auth

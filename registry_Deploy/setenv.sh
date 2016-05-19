@@ -19,13 +19,15 @@ if [ -f ./install/config/docker-compose.yml ]; then
 fi
 
 mkdir -p ./install/config
+mkdir -p ./install/storage
+
 cp -rf ./Templates/config/* ./install/config
 if [ -f ./install/config/docker-compose.yml ]; then
     mv ./install/config/docker-compose.yml ./install/docker-compose.yml
 fi
 cp -rf ./Templates/storage/* ./install/storage
 
-sed -i "s#<IMAGE_ADDR>#$IMAGE_ADDR#g" $composeYml
+#sed -i "s#<IMAGE_ADDR>#$IMAGE_ADDR#g" $composeYml
 sed -i "s#<configPath>#$CONFIG_PATH#g" $composeYml
 sed -i "s#<storagePath>#$STORAGE_PATH#g" $composeYml
 # sed -i "s#<UI_IMAGE>#$UI_IMAGE#g" $composeYml
@@ -33,6 +35,7 @@ sed -i "s#<storagePath>#$STORAGE_PATH#g" $composeYml
 # sed -i "s#<AUTH_IMAGE>#$AUTH_IMAGE#g" $composeYml
 # sed -i "s#<ELA_IMAGE>#$ELA_IMAGE#g" $composeYml
 # sed -i "s#<LOGSTASH_IMAGE>#$LOGSTASH_IMAGE#g" $composeYml
+sed -i "s#<image_prefix>#$IMAGE_PREFIX#g" $composeYml
 
 count=1
 while [ "$#" -ge "1" ];do
