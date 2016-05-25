@@ -1,0 +1,268 @@
+2016-05-24 11:32:14,269 INFO [24-139800548894528] Connect to db success.
+2016-05-24 11:32:44,327 ERROR [24-139800548894528] Get mongodb server info fail,as[localhost:27017: [Errno 111] Connection refused]
+2016-05-24 11:32:58,376 ERROR [24-139800548894528] get_config fail,key:token_effective_time
+2016-05-24 11:32:58,377 ERROR [24-139800548894528] get_config fail,key:event_cache_time
+2016-05-24 11:32:58,378 ERROR [24-139800548894528] get_config fail,key:token_effective_time
+2016-05-24 11:32:59,170 ERROR [24-139800548894528] get_config fail,key:token_effective_time
+2016-05-24 11:32:59,212 ERROR [24-139800548894528] DockerClient init fail,as the sock fail not exist.
+2016-05-24 11:32:59,212 ERROR [24-139800548894528] DockerClient init fail,as the sock fail not exist.
+2016-05-24 11:32:59,261 INFO [24-139800548894528] WebService Starting completed
+2016-05-24 11:33:59,118 DEBUG [24-139800122787584] login return value <Result<'result':0,'message':'done','return':{'access_key': '57df296a-4adc-4bd8-bac6-4009d4dab699', 'role': 'admin', 'agreement': False, 'access_uuid': u'admin'}>>
+2016-05-24 11:34:02,790 DEBUG [24-139800122787584] accept_disclaimer return value <Result<'result':0,'message':'done','return':admin>>
+2016-05-24 11:34:02,890 DEBUG [24-139799910414080] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.1', 'dev_version': u'099'}>>
+2016-05-24 11:34:02,942 INFO [24-139800122787584] meminfo:Total[1879104]Free[149648]Buffers[13952]Cached[1715504]
+2016-05-24 11:34:02,942 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957464, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1879104L, u'user': 1.0, 'cpuUsage': 24.0, 'totalDisk': 96094988}>>
+2016-05-24 11:34:12,841 INFO [24-139799910414080] meminfo:Total[1874568]Free[144160]Buffers[13988]Cached[1716420]
+2016-05-24 11:34:12,841 DEBUG [24-139799910414080] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957476, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1874568L, u'user': 1.0, 'cpuUsage': 20.7, 'totalDisk': 96094988}>>
+2016-05-24 11:34:17,316 INFO [24-139800122787584] meminfo:Total[1873848]Free[143620]Buffers[13992]Cached[1716236]
+2016-05-24 11:34:17,316 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957476, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1873848L, u'user': 1.0, 'cpuUsage': 32.0, 'totalDisk': 96094988}>>
+2016-05-24 11:34:17,320 DEBUG [24-139799910414080] find a network iface[eth0]
+2016-05-24 11:34:17,320 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':['eth0']>>
+2016-05-24 11:34:17,328 DEBUG [24-139800122787584] popularTags return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:34:17,331 DEBUG [24-139799910414080] registryCounter return value <Result<'result':0,'message':'done','return':{u'push': 0.0, u'pull': 0.0}>>
+2016-05-24 11:34:17,390 DEBUG [24-139800122787584] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.1', 'dev_version': u'099'}>>
+2016-05-24 11:34:19,467 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0, 'iface': 'eth0', 'RxBytes': 0}>>
+2016-05-24 11:34:21,462 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:23,461 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:25,468 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:26,885 INFO [24-139799910414080] meminfo:Total[1873780]Free[143488]Buffers[14024]Cached[1716268]
+2016-05-24 11:34:26,885 DEBUG [24-139799910414080] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957440, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1873780L, u'user': 1.0, 'cpuUsage': 40.5, 'totalDisk': 96094988}>>
+2016-05-24 11:34:26,888 DEBUG [24-139800122787584] find a network iface[eth0]
+2016-05-24 11:34:26,888 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':['eth0']>>
+2016-05-24 11:34:26,895 DEBUG [24-139799910414080] popularTags return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:34:26,898 DEBUG [24-139800122787584] registryCounter return value <Result<'result':0,'message':'done','return':{u'push': 0.0, u'pull': 0.0}>>
+2016-05-24 11:34:26,950 DEBUG [24-139799910414080] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.1', 'dev_version': u'099'}>>
+2016-05-24 11:34:28,896 DEBUG [24-139800122787584] logout return value <Result<'result':0,'message':'done','return':admin>>
+2016-05-24 11:34:35,898 DEBUG [24-139799910414080] login return value <Result<'result':0,'message':'done','return':{'access_key': '48506696-6ca9-4d31-bd37-bb826957a88d', 'role': 'admin', 'agreement': True, 'access_uuid': u'admin'}>>
+2016-05-24 11:34:35,947 INFO [24-139800122787584] meminfo:Total[1873568]Free[141000]Buffers[14156]Cached[1718412]
+2016-05-24 11:34:35,947 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957416, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1873568L, u'user': 1.0, 'cpuUsage': 27.1, 'totalDisk': 96094988}>>
+2016-05-24 11:34:35,950 DEBUG [24-139799910414080] find a network iface[eth0]
+2016-05-24 11:34:35,950 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':['eth0']>>
+2016-05-24 11:34:35,957 DEBUG [24-139800122787584] popularTags return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:34:35,959 DEBUG [24-139799910414080] registryCounter return value <Result<'result':0,'message':'done','return':{u'push': 0.0, u'pull': 0.0}>>
+2016-05-24 11:34:35,973 DEBUG [24-139800122787584] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.1', 'dev_version': u'099'}>>
+2016-05-24 11:34:38,014 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:40,016 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:42,014 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:44,011 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:45,923 INFO [24-139799910414080] meminfo:Total[1877748]Free[149448]Buffers[14160]Cached[1714140]
+2016-05-24 11:34:45,923 DEBUG [24-139799910414080] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957392, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1877748L, u'user': 1.0, 'cpuUsage': 31.0, 'totalDisk': 96094988}>>
+2016-05-24 11:34:46,015 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:48,012 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:50,016 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:52,014 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:54,015 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:55,925 INFO [24-139799910414080] meminfo:Total[1878100]Free[149756]Buffers[14192]Cached[1714152]
+2016-05-24 11:34:55,926 DEBUG [24-139799910414080] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957396, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1878100L, u'user': 1.0, 'cpuUsage': 32.3, 'totalDisk': 96094988}>>
+2016-05-24 11:34:56,012 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:34:58,018 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:00,014 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:02,017 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:04,017 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:05,919 INFO [24-139799910414080] meminfo:Total[1878780]Free[150380]Buffers[14216]Cached[1714184]
+2016-05-24 11:35:05,919 DEBUG [24-139799910414080] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957408, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1878780L, u'user': 1.0, 'cpuUsage': 26.1, 'totalDisk': 96094988}>>
+2016-05-24 11:35:06,012 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:08,019 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:10,015 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:12,016 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:14,016 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:15,919 INFO [24-139799910414080] meminfo:Total[1878200]Free[149944]Buffers[14240]Cached[1714016]
+2016-05-24 11:35:15,919 DEBUG [24-139799910414080] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957384, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1878200L, u'user': 1.0, 'cpuUsage': 33.2, 'totalDisk': 96094988}>>
+2016-05-24 11:35:16,017 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:18,014 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:20,019 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:35:20,449 DEBUG [24-139799910414080] login return value <Result<'result':0,'message':'done','return':{'access_key': 'f80ff8b5-a0b3-42a2-9543-9857be612410', 'role': 'admin', 'agreement': True, 'access_uuid': u'admin'}>>
+2016-05-24 11:35:22,012 ERROR [24-139800122787584] AuthenMgr.verify_token fail as ['Check authenication fail']
+2016-05-24 11:35:22,012 DEBUG [24-139800122787584] check token fail
+2016-05-24 11:35:25,103 DEBUG [24-139799910414080] popularTags return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:35:25,107 DEBUG [24-139800122787584] registryCounter return value <Result<'result':0,'message':'done','return':{u'push': 0.0, u'pull': 0.0}>>
+2016-05-24 11:35:26,461 INFO [24-139799910414080] meminfo:Total[1877596]Free[149276]Buffers[14288]Cached[1714032]
+2016-05-24 11:35:26,461 DEBUG [24-139799910414080] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957316, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1877596L, u'user': 1.0, 'cpuUsage': 25.3, 'totalDisk': 96094988}>>
+2016-05-24 11:35:26,464 DEBUG [24-139800122787584] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.1', 'dev_version': u'099'}>>
+2016-05-24 11:35:31,462 INFO [24-139799910414080] meminfo:Total[1877372]Free[149028]Buffers[14304]Cached[1714040]
+2016-05-24 11:35:31,463 DEBUG [24-139799910414080] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957312, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1877372L, u'user': 1.0, 'cpuUsage': 24.1, 'totalDisk': 96094988}>>
+2016-05-24 11:35:40,895 DEBUG [24-139800122787584] namespaces return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-24 11:35:42,881 DEBUG [24-139799910414080] groups return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:44:12,502 DEBUG [24-139800122787584] login return value <Result<'result':0,'message':'done','return':{'access_key': '1575bfb9-a066-4bff-a5af-06a5dc977184', 'role': 'admin', 'agreement': True, 'access_uuid': u'admin'}>>
+2016-05-24 11:44:12,782 INFO [24-139799910414080] meminfo:Total[1846552]Free[133232]Buffers[30332]Cached[1682988]
+2016-05-24 11:44:12,782 DEBUG [24-139799910414080] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957324, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1846552L, u'user': 1.0, 'cpuUsage': 23.7, 'totalDisk': 96094988}>>
+2016-05-24 11:44:12,789 DEBUG [24-139800122787584] find a network iface[eth0]
+2016-05-24 11:44:12,789 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':['eth0']>>
+2016-05-24 11:44:12,795 DEBUG [24-139799910414080] popularTags return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:44:12,799 DEBUG [24-139800122787584] registryCounter return value <Result<'result':0,'message':'done','return':{u'push': 0.0, u'pull': 0.0}>>
+2016-05-24 11:44:12,865 DEBUG [24-139799910414080] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.1', 'dev_version': u'099'}>>
+2016-05-24 11:44:15,134 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:17,124 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:19,128 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:21,121 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:22,683 INFO [24-139800122787584] meminfo:Total[1845600]Free[131356]Buffers[30536]Cached[1683708]
+2016-05-24 11:44:22,683 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957272, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1845600L, u'user': 1.0, 'cpuUsage': 20.3, 'totalDisk': 96094988}>>
+2016-05-24 11:44:23,122 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0007047653198242188, 'iface': 'eth0', 'RxBytes': 0.0006952285766601562}>>
+2016-05-24 11:44:25,128 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:27,129 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:29,121 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:31,122 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:32,681 INFO [24-139800122787584] meminfo:Total[1846652]Free[132192]Buffers[30704]Cached[1683756]
+2016-05-24 11:44:32,681 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957260, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1846652L, u'user': 1.0, 'cpuUsage': 27.1, 'totalDisk': 96094988}>>
+2016-05-24 11:44:33,122 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0007047653198242188, 'iface': 'eth0', 'RxBytes': 0.0006952285766601562}>>
+2016-05-24 11:44:35,124 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:37,126 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:39,130 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:41,123 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:44:42,689 INFO [24-139800122787584] meminfo:Total[1845136]Free[130384]Buffers[30728]Cached[1684024]
+2016-05-24 11:44:42,689 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957260, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1845136L, u'user': 1.0, 'cpuUsage': 24.2, 'totalDisk': 96094988}>>
+2016-05-24 11:44:43,127 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0007047653198242188, 'iface': 'eth0', 'RxBytes': 0.0006952285766601562}>>
+2016-05-24 11:44:45,120 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0006151199340820312, 'iface': 'eth0', 'RxBytes': 0.000701904296875}>>
+2016-05-24 11:44:45,856 DEBUG [24-139799910414080] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.1', 'dev_version': u'099'}>>
+2016-05-24 11:44:47,714 ERROR [24-139800122787584] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:44:47,715 INFO [24-139800122787584] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:44:47,894 ERROR [24-139799910414080] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:44:47,895 INFO [24-139799910414080] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:44:47,904 ERROR [24-139800122787584] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:44:47,904 INFO [24-139800122787584] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:44:47,915 ERROR [24-139799910414080] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:44:47,915 INFO [24-139799910414080] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:44:52,893 ERROR [24-139800122787584] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:44:52,894 INFO [24-139800122787584] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:44:52,908 ERROR [24-139799910414080] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:44:52,908 INFO [24-139799910414080] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:44:52,917 ERROR [24-139800122787584] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:44:52,918 INFO [24-139800122787584] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:44:52,929 ERROR [24-139799910414080] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:44:52,930 INFO [24-139799910414080] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:02,904 ERROR [24-139800122787584] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:45:02,905 INFO [24-139800122787584] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:02,913 ERROR [24-139799910414080] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:45:02,914 INFO [24-139799910414080] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:02,923 ERROR [24-139800122787584] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:45:02,924 INFO [24-139800122787584] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:02,933 ERROR [24-139799910414080] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:45:02,934 INFO [24-139799910414080] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:17,908 ERROR [24-139800122787584] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:45:17,909 INFO [24-139800122787584] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:17,919 ERROR [24-139799910414080] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:45:17,920 INFO [24-139799910414080] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:17,928 ERROR [24-139800122787584] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:45:17,928 INFO [24-139800122787584] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:17,936 ERROR [24-139799910414080] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:45:17,937 INFO [24-139799910414080] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:37,911 ERROR [24-139800122787584] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:45:37,912 INFO [24-139800122787584] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:37,926 ERROR [24-139799910414080] parse_scope[repository:one/docker_auth:push,pull]in
+None
+2016-05-24 11:45:37,926 INFO [24-139799910414080] parse_scope return[[{'Type': 'repository', 'name': 'one/docker_auth', 'actions': ['*']}]]
+2016-05-24 11:45:46,639 DEBUG [24-139800122787584] smtp return value <Result<'result':0,'message':'done','return':{u'_id': 1, u'from_addr': u'', u'ssl': 0, u'host': u'', u'password': u'', u'port': 25}>>
+2016-05-24 11:45:46,642 DEBUG [24-139799910414080] emails return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:46:15,733 DEBUG [24-139800122787584] smtp return value <Result<'result':0,'message':'done','return':{u'_id': 1, u'from_addr': u'', u'ssl': 0, u'host': u'', u'password': u'', u'port': 25}>>
+2016-05-24 11:46:15,736 DEBUG [24-139799910414080] emails return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:46:26,601 DEBUG [24-139800122787584] namespaces return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-24 11:46:48,678 DEBUG [24-139799910414080] namespaces return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-24 11:46:48,722 DEBUG [24-139800122787584] repositories return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-24 11:46:48,762 DEBUG [24-139799910414080] domain return value <Result<'result':0,'message':'done','return':{'domain': u'192.168.15.126:5002'}>>
+2016-05-24 11:46:51,682 INFO [24-139800122787584] meminfo:Total[1844088]Free[137016]Buffers[31408]Cached[1675664]
+2016-05-24 11:46:51,682 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957148, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1844088L, u'user': 1.0, 'cpuUsage': 26.2, 'totalDisk': 96094988}>>
+2016-05-24 11:46:51,687 DEBUG [24-139799910414080] find a network iface[eth0]
+2016-05-24 11:46:51,688 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':['eth0']>>
+2016-05-24 11:46:51,692 DEBUG [24-139800122787584] popularTags return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:46:51,710 DEBUG [24-139799910414080] registryCounter return value <Result<'result':0,'message':'done','return':{u'push': 0.0, u'pull': 0.0}>>
+2016-05-24 11:46:53,811 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:46:55,820 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:46:57,815 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:46:59,813 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:01,646 INFO [24-139800122787584] meminfo:Total[1844124]Free[141456]Buffers[31432]Cached[1671236]
+2016-05-24 11:47:01,647 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957120, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1844124L, u'user': 1.0, 'cpuUsage': 26.1, 'totalDisk': 96094988}>>
+2016-05-24 11:47:01,819 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:03,814 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:05,811 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:07,820 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:09,814 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:11,641 INFO [24-139800122787584] meminfo:Total[1842196]Free[136124]Buffers[31464]Cached[1674608]
+2016-05-24 11:47:11,641 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957108, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1842196L, u'user': 1.0, 'cpuUsage': 24.7, 'totalDisk': 96094988}>>
+2016-05-24 11:47:11,811 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:13,820 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:15,813 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:17,816 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:19,816 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:21,648 INFO [24-139800122787584] meminfo:Total[1842028]Free[146220]Buffers[31496]Cached[1664312]
+2016-05-24 11:47:21,649 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957132, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1842028L, u'user': 1.0, 'cpuUsage': 25.9, 'totalDisk': 96094988}>>
+2016-05-24 11:47:21,813 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:23,810 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:25,811 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:27,810 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:29,810 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:31,640 INFO [24-139800122787584] meminfo:Total[1841696]Free[145824]Buffers[31520]Cached[1664352]
+2016-05-24 11:47:31,641 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957132, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1841696L, u'user': 1.0, 'cpuUsage': 27.6, 'totalDisk': 96094988}>>
+2016-05-24 11:47:31,811 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:33,813 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:35,810 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:37,812 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:39,810 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:41,649 INFO [24-139800122787584] meminfo:Total[1838788]Free[143916]Buffers[31536]Cached[1663336]
+2016-05-24 11:47:41,649 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957116, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1838788L, u'user': 1.0, 'cpuUsage': 30.8, 'totalDisk': 96094988}>>
+2016-05-24 11:47:41,812 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:43,812 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:44,208 DEBUG [24-139799910414080] login return value <Result<'result':0,'message':'done','return':{'access_key': '988f6819-5695-4e01-be07-b731f9ee2395', 'role': 'admin', 'agreement': True, 'access_uuid': u'admin'}>>
+2016-05-24 11:47:44,569 DEBUG [24-139799910414080] find a network iface[eth0]
+2016-05-24 11:47:44,569 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':['eth0']>>
+2016-05-24 11:47:44,571 INFO [24-139800122787584] meminfo:Total[1841108]Free[153324]Buffers[31544]Cached[1656240]
+2016-05-24 11:47:44,572 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957076, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1841108L, u'user': 1.0, 'cpuUsage': 29.1, 'totalDisk': 96094988}>>
+2016-05-24 11:47:44,623 DEBUG [24-139799910414080] popularTags return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:47:44,633 DEBUG [24-139800122787584] registryCounter return value <Result<'result':0,'message':'done','return':{u'push': 0.0, u'pull': 0.0}>>
+2016-05-24 11:47:44,736 DEBUG [24-139799910414080] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.1', 'dev_version': u'099'}>>
+2016-05-24 11:47:45,484 INFO [24-139800122787584] parse_scope return[[]]
+2016-05-24 11:47:45,813 ERROR [24-139799910414080] AuthenMgr.verify_token fail as ['Check authenication fail']
+2016-05-24 11:47:45,813 DEBUG [24-139799910414080] check token fail
+2016-05-24 11:47:46,779 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0010728836059570312, 'iface': 'eth0', 'RxBytes': 0.00128173828125}>>
+2016-05-24 11:47:48,789 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:50,782 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:52,781 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:54,269 INFO [24-139800122787584] meminfo:Total[1838656]Free[151044]Buffers[31576]Cached[1656036]
+2016-05-24 11:47:54,269 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957064, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1838656L, u'user': 1.0, 'cpuUsage': 22.1, 'totalDisk': 96094988}>>
+2016-05-24 11:47:54,780 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0007047653198242188, 'iface': 'eth0', 'RxBytes': 0.0007276535034179688}>>
+2016-05-24 11:47:56,780 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:47:58,782 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:48:00,782 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:48:02,778 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:48:04,267 INFO [24-139800122787584] meminfo:Total[1841384]Free[158032]Buffers[31592]Cached[1651760]
+2016-05-24 11:48:04,267 DEBUG [24-139800122787584] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957064, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1841384L, u'user': 1.0, 'cpuUsage': 24.8, 'totalDisk': 96094988}>>
+2016-05-24 11:48:04,778 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0007047653198242188, 'iface': 'eth0', 'RxBytes': 0.0007276535034179688}>>
+2016-05-24 11:48:06,779 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:48:07,413 DEBUG [24-139799910414080] repositories return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-24 11:48:08,779 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0005464553833007812, 'iface': 'eth0', 'RxBytes': 0.000823974609375}>>
+2016-05-24 11:48:10,779 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:48:12,778 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:48:14,267 INFO [24-139799910414080] meminfo:Total[1838448]Free[147864]Buffers[31988]Cached[1658596]
+2016-05-24 11:48:14,268 DEBUG [24-139799910414080] info return value <Result<'result':0,'message':'done','return':{u'repository': 0.0, 'totalCpu': 4, 'availableDisk': 74957020, u'namespace': 0.0, 'totalRam': 8086648L, 'availableRam': 1838448L, u'user': 1.0, 'cpuUsage': 26.5, 'totalDisk': 96094988}>>
+2016-05-24 11:48:14,777 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0007047653198242188, 'iface': 'eth0', 'RxBytes': 0.0007276535034179688}>>
+2016-05-24 11:48:16,780 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:48:18,779 DEBUG [24-139800122787584] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:48:20,779 DEBUG [24-139799910414080] netifs return value <Result<'result':0,'message':'done','return':{'TxBytes': 0.0, 'iface': 'eth0', 'RxBytes': 0.0}>>
+2016-05-24 11:48:21,439 DEBUG [24-139800122787584] namespaces return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-24 11:48:21,454 DEBUG [24-139799910414080] repositories return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-24 11:48:21,482 DEBUG [24-139800122787584] domain return value <Result<'result':0,'message':'done','return':{'domain': u'192.168.15.126:5002'}>>
+2016-05-24 11:48:28,128 DEBUG [24-139799910414080] tags return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:48:31,863 DEBUG [24-139800122787584] namespaces return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-24 11:48:31,872 DEBUG [24-139799910414080] domain return value <Result<'result':0,'message':'done','return':{'domain': u'192.168.15.126:5002'}>>
+2016-05-24 11:48:31,882 DEBUG [24-139800122787584] repositories return value <PageResult<'total':0,'message':'done','return':[]>>
+2016-05-24 11:48:37,703 DEBUG [24-139799910414080] version return value <Result<'result':0,'message':'done','return':{'pro_version': u'v1.0.1', 'dev_version': u'099'}>>
+2016-05-24 11:48:38,565 DEBUG [24-139800122787584] smtp return value <Result<'result':0,'message':'done','return':{u'_id': 1, u'from_addr': u'', u'ssl': 0, u'host': u'', u'password': u'', u'port': 25}>>
+2016-05-24 11:48:38,567 DEBUG [24-139799910414080] emails return value <Result<'result':0,'message':'done','return':[]>>
+2016-05-24 11:49:03,704 DEBUG [24-139800122787584] update_email return value <Result<'result':0,'message':'done','return':1>>
+2016-05-24 11:49:18,745 INFO [24-139799910414080] parse_scope return[[]]

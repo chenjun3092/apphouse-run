@@ -98,6 +98,8 @@ License_display="\n
 --------------------------------------------------------------\n
 Install Success, you can access private repository via\n
 http://<YourHostIP>\n
+Default username: admin\n
+Default password: 123456\n
 If you have any questions, please access www.youruncloud.com,\n
 thanks.\n
 --------------------------------------------------------------\n"

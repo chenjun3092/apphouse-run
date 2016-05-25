@@ -1,0 +1,616 @@
+
+2016-05-24 11:35:22
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/api/apiauthen.py", line 112, in verify_token
+  File "src-pyc/frame/authen.py", line 183, in check_token
+  File "src-pyc/frame/authen.py", line 220, in verify_sec_key
+OPException: 'Check authenication fail'
+
+2016-05-24 11:44:47
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:44:47
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:44:47
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:44:47
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:44:52
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:44:52
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:44:52
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:44:52
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:45:02
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:45:02
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:45:02
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:45:02
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:45:17
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:45:17
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:45:17
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:45:17
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:45:37
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:45:37
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:47:45
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend
+
+2016-05-24 11:47:45
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/api/apiauthen.py", line 112, in verify_token
+  File "src-pyc/frame/authen.py", line 183, in check_token
+  File "src-pyc/frame/authen.py", line 220, in verify_sec_key
+OPException: 'Check authenication fail'
+
+2016-05-24 11:49:18
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "src-pyc/frame/jwti.py", line 90, in encode
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jwt.py", line 56, in encode
+    json_payload, key, algorithm, headers, json_encoder
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/api_jws.py", line 97, in encode
+    key = alg_obj.prepare_key(key)
+  File "/usr/local/lib/python2.7/dist-packages/PyJWT-1.4.0-py2.7.egg/jwt/algorithms.py", line 167, in prepare_key
+    key = load_pem_private_key(key, password=None, backend=default_backend())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 35, in default_backend
+    _default_backend = MultiBackend(_available_backends())
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/__init__.py", line 22, in _available_backends
+    "cryptography.backends"
+  File "/usr/local/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2235, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/backends/openssl/backend.py", line 14, in <module>
+    from cryptography import utils, x509
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/__init__.py", line 8, in <module>
+    from cryptography.x509.base import (
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/base.py", line 15, in <module>
+    from cryptography.x509.extensions import Extension, ExtensionType
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/x509/extensions.py", line 19, in <module>
+    from cryptography.hazmat.primitives import constant_time, serialization
+  File "/usr/local/lib/python2.7/dist-packages/cryptography-1.3.1-py2.7-linux-x86_64.egg/cryptography/hazmat/primitives/constant_time.py", line 9, in <module>
+    from cryptography.hazmat.bindings._constant_time import lib
+ImportError: No module named _cffi_backend

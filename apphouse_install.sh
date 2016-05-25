@@ -29,4 +29,6 @@ docker run --privileged=true \
     -v /var/lib/docker:/var/lib/docker \
     -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
     -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
-    index.alauda.cn/youruncloud/apphouse:v1.0.1.099
+    apphouse:env0.3
+    #apphouse:v1.0.2.100.099
+    #index.youruncloud.com/apphouse/apphouse:v1.0.2.100
