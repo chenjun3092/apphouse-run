@@ -7,8 +7,8 @@ registry_collector_auth:
     - 9182:9182/tcp
     - 27017:27017/tcp
   links:
-    - registry:registry
-  image: <image_prefix>/registry_collector_auth:v1.0.2.100.100
+    - registry
+  image: <image_prefix>/registry_collector_auth:v1.0.2.101.102
   volumes:
     - <configPath>/registry_collector/config.conf:/opt/source/frame/conf/config.conf
     - <configPath>/registry_collector/dbconf/mongodb_linux.conf:/opt/source/mongodb/conf/mongodb_linux.conf
@@ -21,6 +21,7 @@ registry_collector_auth:
     - /proc:/host/proc:ro
     - /etc/localtime:/etc/localtime:ro
 registryui:
+  privileged: true
   restart: always
   stdin_open: true
   tty: true
@@ -29,42 +30,45 @@ registryui:
     - 443:443/tcp
   links:
     - registry:registry
-  image: <image_prefix>/registry_ui:v1.0.2.100.089
+  image: <image_prefix>/registry_ui:v1.0.2.101.090
   volumes:
-    - <configPath>/nginx_conf:/etc/nginx/conf.d
+    - <configPath>/nginx_conf:/etc/nginx/conf.d:z
     - /etc/localtime:/etc/localtime:ro
 registry:
+  privileged: true
   restart: always
   stdin_open: true
   tty: true
   ports:
     - 5002:5002/tcp
-  image: <image_prefix>/registry:v1.0.2.100.240
+  image: <image_prefix>/registry:v1.0.2.101.240
   volumes:
-    - <configPath>/registry/config.yml:/etc/docker/registry/config.yml
+    - <configPath>/registry/config.yml:/etc/docker/registry/config.yml:z
     - <configPath>/nginx_conf/ssl_auth:/ssl
     - <storagePath>/registry/storage:/var/lib/registry:z
     - /etc/localtime:/etc/localtime:ro
 elasticsearch:
+  privileged: true
   restart: always
   stdin_open: true
   tty: true
-  image: <image_prefix>/elasticsearch:v1.0.2.100.08
+  image: <image_prefix>/elasticsearch:v1.0.2.101.08
   volumes:
-    - <configPath>/docker_el/elasticsearch/config/elasticsearch.yml:/elasticsearch/config/elasticsearch.yml
+    - <configPath>/docker_el/elasticsearch/config/elasticsearch.yml:/elasticsearch/config/elasticsearch.yml:z
     - <storagePath>/docker_el/elasticsearch/storage:/elasticsearch/data:z
     - /etc/localtime:/etc/localtime:ro
   ports:
     - "9200:9200"
     - "9300:9300"
 logstash:
+  privileged: true
   restart: always
   stdin_open: true
   tty: true
-  image: <image_prefix>/logstash:v1.0.2.100.08
+  image: <image_prefix>/logstash:v1.0.2.101.08
   command: logstash -f /etc/logstash/conf.d/logstash.conf
   volumes:
-    - <configPath>/docker_el/logstash/config/logstash.conf:/etc/logstash/conf.d/logstash.conf
+    - <configPath>/docker_el/logstash/config/logstash.conf:/etc/logstash/conf.d/logstash.conf:z
     - <storagePath>/registry_collector/logs/operation.log:/usr/share/logstash/log/collector_auth_operation.log:z
     - /etc/localtime:/etc/localtime:ro
   links:

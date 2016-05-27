@@ -12,7 +12,7 @@ while [ "$#" -ge "1" ];do
     if [ $1 = "-ip" ];then
         shift
         IP=$1
-        ANSWER=$(echo $IP|awk -F '.' '$1 < 255 && $1 >= 0 && $2 < 255 && $2 >= 0 && $3 < 255 && $3 >= 0 && $4 < 255 && $4 >= 0 {print 1}')
+        ANSWER=$(echo $IP|awk -F '.' '$1 < 256 && $1 >= 0 && $2 < 256 && $2 >= 0 && $3 < 256 && $3 >= 0 && $4 < 256 && $4 >= 0 {print 1}')
         if [ "$ANSWER" != "1" ];then
             echo "usage:$0 -ip 192.168.0.1"
             exit 1
@@ -29,6 +29,7 @@ docker run --privileged=true \
     -v /var/lib/docker:/var/lib/docker \
     -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
     -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
-    apphouse:env0.3
+    index.alauda.cn/youruncloud/apphouse:v1.0.2.101
+    #apphouse:env1.0
     #apphouse:v1.0.2.100.099
     #index.youruncloud.com/apphouse/apphouse:v1.0.2.100
