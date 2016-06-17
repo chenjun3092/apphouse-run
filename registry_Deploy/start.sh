@@ -68,16 +68,83 @@ fi
 
 # if [ "$DEV" -eq "true" -o "$DEV" -eq "TRUE" ]; then
 if [ "$APPHOUSE_DEV" ]; then
-    image_prefix="index.alauda.cn/youruncloud"
+    image_prefix="192.168.18.250:5002/apphouse"
+        # docker login --email=20100688@qq.com --password=admin --username=admin 192.168.18.250:5002
+        if [ "$RG_PWD" ]; then
+            PassWord=$RG_PWD
+        else
+            PassWord="admin"
+        fi
+
+        if [ "$RG_USER" ]; then
+            UserName=$RG_USER
+        else
+            UserName="admin"
+        fi
+
+        if [ "$RG_EMAIL" ]; then
+            Email=$RG_EMAIL
+        else
+            Email="20100688@qq.com"
+        fi
+
+        docker login --email=$Email --password=$PassWord --username=$UserName 192.168.18.250:5002
+
     # echo "$image_prefix"
 else
     image_prefix="index.youruncloud.com/apphouse"
     # echo "$image_prefix"
 fi
 
+if [ "$UI_PORT" ]; then
+    Ui_Port=$UI_PORT
+    # echo "$UI_PORT"
+else
+    Ui_Port="80"
+    # echo "$UI_PORT"
+fi
+
+if [ "$SSL_PORT" ]; then
+    Ssl_Port=$SSL_PORT
+else
+    Ssl_Port="443"
+fi
+
+# if [ "$CORE_PORT" ]; then
+    # Core_Port=$CORE_PORT
+# else
+    # Core_Port="9182"
+# fi
+
+# if [ "$LOG_PORT" ]; then
+    # Log_Port=$LOG_PORT
+# else
+    # Log_Port="9200"
+# fi
+
+# if [ "$DB_PORT" ]; then
+    # Db_Port=$DB_PORT
+# else
+    # Db_Port="27017"
+# fi
+
+# if [ "$RG_PORT" ]; then
+    # Rg_Port=$RG_PORT
+# else
+    # Rg_Port="5002"
+# fi
+
 export CONFIG_PATH=$configPath
 export STORAGE_PATH=$storagePath
 export IMAGE_PREFIX=$image_prefix
+
+export Ui_Port
+export Ssl_Port
+
+# export Db_Port
+# export Rg_Port
+# export Core_Port
+# export Log_Port
 
 . $DEPLOY_PATH/setenv.sh -ip $HOST_IP
 cd $DEPLOY_PATH/install
@@ -90,7 +157,8 @@ Please wait for completion...\n
 --------------------------------------------------------------\n"
 echo -e $Wait_notes
 
-$VENV_BIN/docker-compose up -d
+docker-compose up -d
+#$VENV_BIN/docker-compose up -d
 
 wait
 
