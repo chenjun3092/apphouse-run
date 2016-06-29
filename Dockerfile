@@ -1,6 +1,6 @@
-FROM apphouse_alpine_base:v1.0.1
+FROM apphouse_alpine_base:v1.0.0
 
-MAINTAINER chenjun <jun.chen@cloudsoar.com>
+MAINTAINER youruncloud <20100688@qq.com>
 
 RUN mkdir -p /var/lib/registry_Deploy
 COPY ./registry_Deploy  /var/lib/registry_Deploy

@@ -69,26 +69,26 @@ fi
 # if [ "$DEV" -eq "true" -o "$DEV" -eq "TRUE" ]; then
 if [ "$APPHOUSE_DEV" ]; then
     image_prefix="192.168.18.250:5002/apphouse"
-        # docker login --email=20100688@qq.com --password=admin --username=admin 192.168.18.250:5002
-        if [ "$RG_PWD" ]; then
-            PassWord=$RG_PWD
-        else
-            PassWord="admin"
-        fi
+    # docker login --email=20100688@qq.com --password=admin --username=admin 192.168.18.250:5002
+#    if [ "$RG_PWD" ]; then
+        #PassWord=$RG_PWD
+    #else
+        #PassWord="admin"
+    #fi
 
-        if [ "$RG_USER" ]; then
-            UserName=$RG_USER
-        else
-            UserName="admin"
-        fi
+    #if [ "$RG_USER" ]; then
+        #UserName=$RG_USER
+    #else
+        #UserName="123456"
+    #fi
 
-        if [ "$RG_EMAIL" ]; then
-            Email=$RG_EMAIL
-        else
-            Email="20100688@qq.com"
-        fi
+    #if [ "$RG_EMAIL" ]; then
+        #Email=$RG_EMAIL
+    #else
+        #Email="20100688@qq.com"
+    #fi
 
-        docker login --email=$Email --password=$PassWord --username=$UserName 192.168.18.250:5002
+#    docker login --email=$Email --password=$PassWord --username=$UserName 192.168.18.250:5002
 
     # echo "$image_prefix"
 else

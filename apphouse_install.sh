@@ -24,13 +24,14 @@ done
 
 docker run --privileged=true \
     -e HOST_IP=$IP \
+    -e APPHOUSE_DEV=true \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v /var/lib/docker:/var/lib/docker \
     -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
     -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
-    index.youruncloud.com/apphouse/apphouse:v1.0.2.105
+    192.168.18.250:5002/apphouse/apphouse:v1.0.2.107
+    #index.youruncloud.com/apphouse/apphouse:v1.0.2.107
     #--entrypoint=/bin/bash \
-    #index.alauda.cn/youruncloud/apphouse:v1.0.2.103
     #apphouse:env1.0
     #apphouse:v1.0.2.100.099
     #index.youruncloud.com/apphouse/apphouse:v1.0.2.100
