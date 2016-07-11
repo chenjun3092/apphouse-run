@@ -23,7 +23,7 @@ health:
 notifications:
   endpoints:
     - name: Fanny
-      url: http://PrivateRegistryHostIP:9182/event
+      url: http://collector_auth:9182/event
       headers:
         Authorization: ["Bearer $2y$05$LO.vzwpWC5LZGqThvEfznu8qhb5SGqvBSWY1J3yZ4AxtMRZ3kN5jC"]
       timeout: 500ms
@@ -32,7 +32,7 @@ notifications:
 
 auth:
   token:
-    realm: http://PrivateRegistryHostIP:9182/auth
+    realm: http://PrivateRegistryHostIP:<UI_PORT>/auth
     service: Docker registry
     issuer: Acme auth server
     rootcertbundle: /ssl/server.crt

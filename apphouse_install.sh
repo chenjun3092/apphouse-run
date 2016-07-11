@@ -30,8 +30,6 @@ docker run --privileged=true \
     -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
     -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
     192.168.18.250:5002/apphouse/apphouse:v1.0.2.107
-    #index.youruncloud.com/apphouse/apphouse:v1.0.2.107
+    #apphouse:upgrade
+    #index.youruncloud.com/apphouse/apphouse:v1.0.2.108
     #--entrypoint=/bin/bash \
-    #apphouse:env1.0
-    #apphouse:v1.0.2.100.099
-    #index.youruncloud.com/apphouse/apphouse:v1.0.2.100

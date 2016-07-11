@@ -209,6 +209,13 @@
 
 # Set both 'bind_host' and 'publish_host':
 #
+#node:
+    #name: ${HOSTNAME}
+#network:
+    #host: 0.0.0.0
+#index:
+    #refresh_internal: 2s
+
 network.host: 0.0.0.0
 http.cors.enabled: true
 http.cors.allow-origin: "/.*/"
@@ -385,8 +392,8 @@ http.port: 9200
 # it unless you need it is recommended (it is disabled by default).
 #
 #http.jsonp.enable: true
-sonian.elasticsearch.http.type: com.sonian.elasticsearch.http.jetty.JettyHttpServerModule
-sonian.elasticsearch.http.jetty:
-    config: jetty.xml,jetty-ssl.xml
-    ssl_port: 9443
-    keystore_password: "OBF:1nc01vuz1w8f1w1c1rbu1rac1w261w9b1vub1ndq"
+#sonian.elasticsearch.http.type: com.sonian.elasticsearch.http.jetty.JettyHttpServerModule
+#sonian.elasticsearch.http.jetty:
+#config: jetty.xml,jetty-ssl.xml
+#ssl_port: 9443
+#    keystore_password: "OBF:1nc01vuz1w8f1w1c1rbu1rac1w261w9b1vub1ndq"

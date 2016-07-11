@@ -13,14 +13,57 @@ fi
 cd $DEPLOY_PATH
 
 composeYml=./install/docker-compose.yml
-nginxConf=./install/config/nginx_conf/registry_ui.conf
+
+idir=./install
+tdir=./Templates
+
+nginx80Conf=config/nginx_conf/registry_ui.conf
+nginx443Conf=config/nginx_conf/docker_registry.conf
+authConf=config/registry_collector/config.conf
+registryConf=./install/config/registry/config.yml
+
+if [ ! -d ./install/config ]; then
+    mkdir -p ./install/config
+fi
+if [ ! -d ./install/storage ]; then
+    mkdir -p ./install/storage
+fi
 
 if [ -f ./install/config/docker-compose.yml ]; then
     rm -rf ./install/config/docker-compose.yml
 fi
 
-mkdir -p ./install/config
-mkdir -p ./install/storage
+if [ -f ${idir}/${nginx80Conf} ]; then
+    # get old setting
+    sed -i '/^ *#/d' ${idir}/${nginx80Conf}
+    line=`sed -n '/'"server_name"'/=' ${idir}/${nginx80Conf}`
+    stmp=`awk -F":" -v n=${line} 'NR==n{print $1}' ${idir}/${nginx80Conf}`
+
+    # set to Templates
+    sed -i '/^ *#/d' ${tdir}/${nginx80Conf} 
+    Templine=`sed -n '/'"server_name"'/=' ${tdir}/${nginx80Conf}`
+    sed -i "${Templine}s/^.*$/${stmp}/" ${tdir}/${nginx80Conf}
+fi
+
+if [ -f ${idir}/${nginx443Conf} ]; then
+    # get old setting
+    sed -i '/^ *#/d' ${idir}/${nginx443Conf}
+    line=`sed -n '/'"server_name"'/=' ${idir}/${nginx443Conf}`
+    stmp=`awk -F":" -v n=${line} 'NR==n{print $1}' ${idir}/${nginx443Conf}`
+
+    # set to Templates
+    sed -i '/^ *#/d' ${tdir}/${nginx443Conf} 
+    Templine=`sed -n '/'"server_name"'/=' ${tdir}/${nginx443Conf}`
+    sed -i "${Templine}s/^.*$/${stmp}/" ${tdir}/${nginx443Conf}
+fi
+
+if [ -f ${idir}/${authConf} ]; then
+    # get old setting
+    commonname=`jq .common_name "${idir}/${authConf}"|sed 's/\"//g'`
+
+    # set to Templates
+    sed -i -r 's/(.*common_name":").*(".*)/\1'"${commonname}"'\2/' "${tdir}/${authConf}"
+fi
 
 cp -rf ./Templates/config/* ./install/config
 if [ -f ./install/config/docker-compose.yml ]; then
@@ -38,6 +81,7 @@ sed -i "s#<storagePath>#$STORAGE_PATH#g" $composeYml
 # sed -i "s#<LOGSTASH_IMAGE>#$LOGSTASH_IMAGE#g" $composeYml
 sed -i "s#<image_prefix>#$IMAGE_PREFIX#g" $composeYml
 sed -i "s#<UI_PORT>#$Ui_Port#g" $composeYml
+sed -i "s#<UI_PORT>#$Ui_Port#g" $registryConf
 sed -i "s#<SSL_PORT>#$Ssl_Port#g" $composeYml
 # sed -i "s#<CORE_PORT>#$Core_Port#g" $composeYml
 # sed -i "s#<DB_PORT>#$Db_Port#g" $composeYml
