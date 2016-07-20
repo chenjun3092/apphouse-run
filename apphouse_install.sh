@@ -22,15 +22,14 @@ while [ "$#" -ge "1" ];do
     shift
 done
 
-docker run --rm --privileged=true -it --rm \
+docker run --rm --privileged=true \
     -e HOST_IP=$IP \
     -e APPHOUSE_DEV=true \
-    --entrypoint=sh \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v /var/lib/docker:/var/lib/docker \
     -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
     -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
-    192.168.18.250:5002/apphouse/apphouse:v1.0.3.110
+    192.168.18.250:5002/apphouse/apphouse:v1.0.3.109
     #apphouse:upgrade
     #index.youruncloud.com/apphouse/apphouse:v1.0.2.108
     #--entrypoint=/bin/bash \
