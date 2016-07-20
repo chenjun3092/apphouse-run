@@ -96,6 +96,10 @@ else
     # echo "$image_prefix"
 fi
 
+if [ "TAG_PREFIX" ]; then
+    image_prefix="${TAG_PREFIX}"
+fi
+
 if [ "$UI_PORT" ]; then
     Ui_Port=$UI_PORT
     # echo "$UI_PORT"

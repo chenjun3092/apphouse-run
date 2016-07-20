@@ -22,15 +22,66 @@ nginx443Conf=config/nginx_conf/docker_registry.conf
 authConf=config/registry_collector/config.conf
 registryConf=./install/config/registry/config.yml
 
+serverCrt=config/nginx_conf/ssl_auth/server.crt
+serverKey=config/nginx_conf/ssl_auth/server.key
+webLog=storage/registry_collector/Trace/logs/web.log
+
 if [ ! -d ./install/config ]; then
     mkdir -p ./install/config
-fi
-if [ ! -d ./install/storage ]; then
-    mkdir -p ./install/storage
+else
+    if [ -f ${idir}/${serverCrt} ]; then
+        #rm -rf ${tdir}/${serverCrt}
+        cp ${idir}/${serverCrt} ${tdir}/${serverCrt}
+    fi
+
+    if [ -f ${idir}/${serverKey} ]; then
+        #rm -rf ${tdir}/${serverKey}
+        cp ${idir}/${serverKey} ${tdir}/${serverKey}
+    fi
 fi
 
-if [ -f ./install/config/docker-compose.yml ]; then
-    rm -rf ./install/config/docker-compose.yml
+if [ ! -d ./install/storage ]; then
+    mkdir -p ./install/storage
+else
+    if [ -f ${idir}/${webLog} ]; then
+        cp ${idir}/${webLog} ${tdir}/${webLog}
+    fi
+fi
+
+if [ -f ${idir}/config/.down ]; then
+
+    cp ${idir}/config/.down ${idir}/docker-compose.yml
+    #cd ./install
+    cd ${idir}
+    #docker-compose down
+    trap "" 1 2 3 24
+    docker-compose stop
+    #../rm_images.sh
+    contain=`docker ps -a|grep Exited|awk '{print $1}'`
+    if [ "${contain}" ]; then
+        #docker "rm" "-f" ${contain}
+        while [ 0 -eq 0 ]
+        do
+            echo "Del contains ..."
+            echo "${contain}"
+            OK=`docker "rm" "-f" ${contain}`
+            #echo $?
+            #echo ${OK}
+            # check and retry     
+            if [ $? -eq 0 ]; then
+                echo "Del complete ..."
+                break;
+            else
+                echo "Error occur, retry in 2 seconds ..."
+                sleep 2
+            fi
+        done
+        rm -rf ${idir}/config/.down
+    fi
+    trap 1 2 3 24
+
+    cd $DEPLOY_PATH
+    #rm -rf ./install/config/docker-compose.yml
 fi
 
 if [ -f ${idir}/${nginx80Conf} ]; then
@@ -68,6 +119,7 @@ fi
 cp -rf ./Templates/config/* ./install/config
 if [ -f ./install/config/docker-compose.yml ]; then
     mv ./install/config/docker-compose.yml ./install/docker-compose.yml
+    #cp -rf ./install/config/docker-compose.yml ./install/docker-compose.yml
 fi
 cp -rf ./Templates/storage/* ./install/storage
 
@@ -87,6 +139,10 @@ sed -i "s#<SSL_PORT>#$Ssl_Port#g" $composeYml
 # sed -i "s#<DB_PORT>#$Db_Port#g" $composeYml
 # sed -i "s#<LOG_PORT>#$Log_Port#g" $composeYml
 # sed -i "s#<RG_PORT>#$Rg_Port#g" $composeYml
+
+if [ -f ${composeYml} ]; then
+    cp -rf ${composeYml} ${idir}/config/.down
+fi
 
 count=1
 while [ "$#" -ge "1" ];do
