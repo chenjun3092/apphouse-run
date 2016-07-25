@@ -48,41 +48,75 @@ else
     fi
 fi
 
-if [ -f ${idir}/config/.down ]; then
+#if [ -f ${idir}/config/.down ]; then
 
-    cp ${idir}/config/.down ${idir}/docker-compose.yml
-    #cd ./install
-    cd ${idir}
-    #docker-compose down
-    trap "" 1 2 3 24
-    docker-compose stop
-    #../rm_images.sh
-    contain=`docker ps -a|grep Exited|awk '{print $1}'`
-    if [ "${contain}" ]; then
-        #docker "rm" "-f" ${contain}
-        while [ 0 -eq 0 ]
-        do
-            echo "Del contains ..."
-            echo "${contain}"
-            OK=`docker "rm" "-f" ${contain}`
-            #echo $?
-            #echo ${OK}
-            # check and retry     
-            if [ $? -eq 0 ]; then
-                echo "Del complete ..."
-                break;
-            else
-                echo "Error occur, retry in 2 seconds ..."
-                sleep 2
-            fi
-        done
-        rm -rf ${idir}/config/.down
-    fi
-    trap 1 2 3 24
+    #cp ${idir}/config/.down ${idir}/docker-compose.yml
+    ##cd ./install
+    #cd ${idir}
+    ##docker-compose down
+    ##trap "" 1 2 3 15
+    #docker-compose stop
+    #sleep 1
+    #sleep 1
+    #sleep 1
+    #sleep 1
+    #sleep 1
+    #contain=`docker ps -a|grep Exited|awk '{print $1}'`
+    #sleep 1
+    #if [ "${contain}" ]; then
+        #docker "stop" ${contain}
+    #fi
+    #sleep 1
+    #contain=`docker ps -a -q --filter "status=exited"`
+    #sleep 1
+    #if [ "${contain}" ]; then
+        #while [ 0 -eq 0 ]
+        #do
+            #echo "Del contains ..."
+            #echo "${contain}"
+            #OK=`docker "rm" "-f" ${contain}`
+            ##echo $?
+            ##echo ${OK}
+            ## check and retry     
+            #if [ $? -eq 0 ]; then
+                #rm -rf ${idir}/config/.down
+                #echo "Del complete ..."
+                #break;
+            #else
+                #echo "Error occur, retry in 2 seconds ..."
+                #sleep 2
+            #fi
+        #done
+    #else
+        #echo "Can't stoping ${contain}. Please manually delete ..."
+    #fi
 
-    cd $DEPLOY_PATH
-    #rm -rf ./install/config/docker-compose.yml
-fi
+##    contain=`docker ps -a|grep Exited|awk '{print $1}'`
+    ##if [ "${contain}" ]; then
+        ###docker "rm" "-f" ${contain}
+        ##while [ 0 -eq 0 ]
+        ##do
+            ##echo "Del contains ..."
+            ##echo "${contain}"
+            ##OK=`docker "rm" "-f" ${contain}`
+            ###echo $?
+            ###echo ${OK}
+            ### check and retry     
+            ##if [ $? -eq 0 ]; then
+                ##rm -rf ${idir}/config/.down
+                ##echo "Del complete ..."
+                ##break;
+            ##else
+                ##echo "Error occur, retry in 2 seconds ..."
+                ##sleep 2
+            ##fi
+        ##done
+##    fi
+    ##trap 1 2 3 15
+
+    #cd $DEPLOY_PATH
+    ##rm -rf ./install/config/docker-compose.yml
+#fi
 
 if [ -f ${idir}/${nginx80Conf} ]; then
     # get old setting

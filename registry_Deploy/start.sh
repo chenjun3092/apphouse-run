@@ -66,8 +66,10 @@ fi
 
 # echo "$APPHOUSE_DEV"
 
-# if [ "$DEV" -eq "true" -o "$DEV" -eq "TRUE" ]; then
-if [ "$APPHOUSE_DEV" ]; then
+if [ "${TAG_PREFIX}" ]; then
+    #echo ${TAG_PREFIX}
+    image_prefix="${TAG_PREFIX}"
+else if [ "${APPHOUSE_DEV}" == "true" ]; then
     image_prefix="192.168.18.250:5002/apphouse"
     # docker login --email=20100688@qq.com --password=admin --username=admin 192.168.18.250:5002
 #    if [ "$RG_PWD" ]; then
@@ -96,8 +98,6 @@ else
     # echo "$image_prefix"
 fi
 
-if [ "TAG_PREFIX" ]; then
-    image_prefix="${TAG_PREFIX}"
 fi
 
 if [ "$UI_PORT" ]; then

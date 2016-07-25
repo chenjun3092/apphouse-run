@@ -22,6 +22,14 @@ while [ "$#" -ge "1" ];do
     shift
 done
 
+#docker "rm" "$(docker stop $(docker ps -a|grep apphouse|awk '{print $1}'))"
+contian=`docker ps -a|grep apphouse|awk '{print $1}'`
+if [ "${contian}" ];then
+    echo "Del contians ..."
+    docker "rm" $(docker "stop" ${contian})
+    echo "Del complete ..."
+fi
+
 docker run --rm --privileged=true \
     -e HOST_IP=$IP \
     -e APPHOUSE_DEV=true \
@@ -29,7 +37,8 @@ docker run --rm --privileged=true \
     -v /var/lib/docker:/var/lib/docker \
     -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
     -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
-    192.168.18.250:5002/apphouse/apphouse:v1.0.3.109
+    192.168.18.250:5002/apphouse/apphouse:v1.0.3.110
+    #-e TAG_PREFIX=192.168.18.250:5002/oem \
     #apphouse:upgrade
     #index.youruncloud.com/apphouse/apphouse:v1.0.2.108
     #--entrypoint=/bin/bash \
