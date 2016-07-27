@@ -37,7 +37,7 @@ docker run --rm --privileged=true \
     -v /var/lib/docker:/var/lib/docker \
     -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
     -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
-    192.168.18.250:5002/apphouse/apphouse:v1.0.3.110
+    192.168.18.250:5002/apphouse/apphouse:v1.0.3.111
     #-e TAG_PREFIX=192.168.18.250:5002/oem \
     #apphouse:upgrade
     #index.youruncloud.com/apphouse/apphouse:v1.0.2.108
