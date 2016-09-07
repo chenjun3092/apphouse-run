@@ -4,9 +4,7 @@
 # file 'LICENSE.txt', which is part of this source code package.
 # https://<YourHostIP>:443 or http://<YourHostIP>:80.\n
 
-
 set -e
-
 
 Welcome_display="\n
 --------------------------------------------------------------\n
@@ -32,70 +30,23 @@ if [ -z $configPath ] || [ -z $storagePath ];then
     exit 1
 fi
 
-
-# AUTH_IMAGE="index.alauda.cn/cloudsoar/registry_collector_auth:0.8.8"
-# UI_IMAGE="index.alauda.cn/cloudsoar/registry_ui:0.8.2"
-# REGISTRY_IMAGE="index.alauda.cn/cloudsoar/registry:2.3.0"
-# ELA_IMAGE="index.alauda.cn/cloudsoar/elasticsearch:0.8"
-# LOGSTASH_IMAGE="index.alauda.cn/cloudsoar/logstash:0.8"
-
-# if [ -z $AUTH_IMAGE ] ;then
-    # echo "env AUTH_IMAGE is empty; container must run with AUTH_IMAGE "
-    # exit 1
-# fi
-
-# if [ -z $UI_IMAGE ] ;then
-    # echo "env UI_IMAGE is empty; container must run with UI_IMAGE "
-    # exit 1
-# fi
-
-# if [ -z $REGISTRY_IMAGE ]; then
-    # echo "env REGISTRY_IMAGE is empty; container must run with REGISTRY_IMAGE "
-    # exit 1
-# fi
-
-# if [ -z $ELA_IMAGE ]; then
-    # echo "env ELA_IMAGE is empty; container must run with ELA_IMAGE "
-    # exit 1
-# fi
-
-# if [ -z $LOGSTASH_IMAGE ]; then
-    # echo "env LOGSTASH_IMAGE is empty; container must run with LOGSTASH_IMAGE "
-    # exit 1
-# fi
+if [ "${HA}" == "true" ] && [ -z ${MgIps} ]; then
+    echo "HA mode MgIps must be set up!"
+    exit 1
+fi
+if [ "${HA}" == "true" ] && [ -z ${HaHost} ];then
+    echo "HA mode HaHost must be set up!"
+    exit 1
+fi
 
 # echo "$APPHOUSE_DEV"
 
 if [ "${TAG_PREFIX}" ]; then
-    #echo ${TAG_PREFIX}
     image_prefix="${TAG_PREFIX}"
 else if [ "${APPHOUSE_DEV}" == "true" ]; then
     image_prefix="192.168.18.250:5002/apphouse"
-    # docker login --email=20100688@qq.com --password=admin --username=admin 192.168.18.250:5002
-#    if [ "$RG_PWD" ]; then
-        #PassWord=$RG_PWD
-    #else
-        #PassWord="admin"
-    #fi
-
-    #if [ "$RG_USER" ]; then
-        #UserName=$RG_USER
-    #else
-        #UserName="123456"
-    #fi
-
-    #if [ "$RG_EMAIL" ]; then
-        #Email=$RG_EMAIL
-    #else
-        #Email="20100688@qq.com"
-    #fi
-
-#    docker login --email=$Email --password=$PassWord --username=$UserName 192.168.18.250:5002
-
-    # echo "$image_prefix"
 else
     image_prefix="index.youruncloud.com/apphouse"
-    # echo "$image_prefix"
 fi
 
 fi
@@ -114,36 +65,15 @@ else
     Ssl_Port="443"
 fi
 
-# if [ "$CORE_PORT" ]; then
-    # Core_Port=$CORE_PORT
-# else
-    # Core_Port="9182"
-# fi
-
-# if [ "$LOG_PORT" ]; then
-    # Log_Port=$LOG_PORT
-# else
-    # Log_Port="9200"
-# fi
-
-# if [ "$DB_PORT" ]; then
-    # Db_Port=$DB_PORT
-# else
-    # Db_Port="27017"
-# fi
-
-# if [ "$RG_PORT" ]; then
-    # Rg_Port=$RG_PORT
-# else
-    # Rg_Port="5002"
-# fi
-
 export CONFIG_PATH=$configPath
 export STORAGE_PATH=$storagePath
 export IMAGE_PREFIX=$image_prefix
-
+export HA=${HA}
+export replSetIp=${MgIps}
+#export CA=${CA}
 export Ui_Port
 export Ssl_Port
+export HAHOSTIP=${HaHost}
 
 # export Db_Port
 # export Rg_Port

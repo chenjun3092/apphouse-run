@@ -17,6 +17,17 @@ composeYml=./install/docker-compose.yml
 idir=./install
 tdir=./Templates
 
+if [ "${HA}" == "true" ]; then
+    rm -rf ${idir}/config/*
+    cp -rf ${tdir}/nginx_conf/* ${tdir}/config/nginx_conf
+    cp -rf ${tdir}/Registry_cfg/config.yml ${tdir}/config/registry/config.yml
+    cp -rf ${tdir}/auth_cfg/HA-config.conf ${tdir}/config/registry_collector/config.conf
+else
+    cp -rf ${tdir}/HTTPS_nginx_conf/* ${tdir}/config/nginx_conf
+    cp -rf ${tdir}/Registry_cfg/HTTPS_config.yml ${tdir}/config/registry/config.yml
+    cp -rf ${tdir}/auth_cfg/config.conf ${tdir}/config/registry_collector/config.conf
+fi
+
 nginx80Conf=config/nginx_conf/registry_ui.conf
 nginx443Conf=config/nginx_conf/docker_registry.conf
 authConf=config/registry_collector/config.conf
@@ -25,6 +36,8 @@ registryConf=./install/config/registry/config.yml
 serverCrt=config/nginx_conf/ssl_auth/server.crt
 serverKey=config/nginx_conf/ssl_auth/server.key
 webLog=storage/registry_collector/Trace/logs/web.log
+
+authConf=config/registry_collector/config.conf
 
 if [ ! -d ./install/config ]; then
     mkdir -p ./install/config
@@ -121,24 +134,24 @@ fi
 if [ -f ${idir}/${nginx80Conf} ]; then
     # get old setting
     sed -i '/^ *#/d' ${idir}/${nginx80Conf}
-    line=`sed -n '/'"server_name"'/=' ${idir}/${nginx80Conf}`
+    line=`sed -n '/'"server_name[[:space:]]"'/=' ${idir}/${nginx80Conf}`
     stmp=`awk -F":" -v n=${line} 'NR==n{print $1}' ${idir}/${nginx80Conf}`
 
     # set to Templates
     sed -i '/^ *#/d' ${tdir}/${nginx80Conf} 
-    Templine=`sed -n '/'"server_name"'/=' ${tdir}/${nginx80Conf}`
+    Templine=`sed -n '/'"server_name[[:space:]]"'/=' ${tdir}/${nginx80Conf}`
     sed -i "${Templine}s/^.*$/${stmp}/" ${tdir}/${nginx80Conf}
 fi
 
 if [ -f ${idir}/${nginx443Conf} ]; then
     # get old setting
     sed -i '/^ *#/d' ${idir}/${nginx443Conf}
-    line=`sed -n '/'"server_name"'/=' ${idir}/${nginx443Conf}`
+    line=`sed -n '/'"server_name[[:space:]]"'/=' ${idir}/${nginx443Conf}`
     stmp=`awk -F":" -v n=${line} 'NR==n{print $1}' ${idir}/${nginx443Conf}`
 
     # set to Templates
     sed -i '/^ *#/d' ${tdir}/${nginx443Conf} 
-    Templine=`sed -n '/'"server_name"'/=' ${tdir}/${nginx443Conf}`
+    Templine=`sed -n '/'"server_name[[:space:]]"'/=' ${tdir}/${nginx443Conf}`
     sed -i "${Templine}s/^.*$/${stmp}/" ${tdir}/${nginx443Conf}
 fi
 
@@ -151,10 +164,16 @@ if [ -f ${idir}/${authConf} ]; then
 fi
 
 cp -rf ./Templates/config/* ./install/config
-if [ -f ./install/config/docker-compose.yml ]; then
-    mv ./install/config/docker-compose.yml ./install/docker-compose.yml
-    #cp -rf ./install/config/docker-compose.yml ./install/docker-compose.yml
+if [ "${HA}" == "true" ]; then
+    if [ -f ./install/config/HA-compose.yml ]; then
+        cp -rf ./install/config/HA-compose.yml ./install/docker-compose.yml
+    fi
+else
+    if [ -f ./install/config/docker-compose.yml ]; then
+        cp -rf ./install/config/docker-compose.yml ./install/docker-compose.yml
+    fi
 fi
+
 cp -rf ./Templates/storage/* ./install/storage
 
 #sed -i "s#<IMAGE_ADDR>#$IMAGE_ADDR#g" $composeYml
@@ -167,16 +186,16 @@ sed -i "s#<storagePath>#$STORAGE_PATH#g" $composeYml
 # sed -i "s#<LOGSTASH_IMAGE>#$LOGSTASH_IMAGE#g" $composeYml
 sed -i "s#<image_prefix>#$IMAGE_PREFIX#g" $composeYml
 sed -i "s#<UI_PORT>#$Ui_Port#g" $composeYml
+sed -i "s#<SSL_PORT>#$Ssl_Port#g" $registryConf
 sed -i "s#<UI_PORT>#$Ui_Port#g" $registryConf
+sed -i "s#<SSL_PORT>#$Ssl_Port#g" ${idir}/${nginx80Conf}
 sed -i "s#<SSL_PORT>#$Ssl_Port#g" $composeYml
+sed -i "s#<MongodbIPPortList>#$replSetIp#g" ${idir}/${authConf}
+sed -i "s#<HAHostIP>#${HAHOSTIP}#g" ${idir}/${authConf}
 # sed -i "s#<CORE_PORT>#$Core_Port#g" $composeYml
 # sed -i "s#<DB_PORT>#$Db_Port#g" $composeYml
 # sed -i "s#<LOG_PORT>#$Log_Port#g" $composeYml
 # sed -i "s#<RG_PORT>#$Rg_Port#g" $composeYml
-
-if [ -f ${composeYml} ]; then
-    cp -rf ${composeYml} ${idir}/config/.down
-fi
 
 count=1
 while [ "$#" -ge "1" ];do

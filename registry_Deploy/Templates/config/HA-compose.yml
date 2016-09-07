@@ -1,22 +1,8 @@
-mongodb:
-  privileged: true
-  restart: always
-  stdin_open: true
-  tty: true
-  image:  <image_prefix>/mongodb:v1.0.4.114
-  command: /mongodb/mongodb/bin/mongod -f /mongodb/conf/mongodb_linux.conf --dbpath /mongodb/data/db
-  volumes:
-    - <storagePath>/registry_collector/mongodb/data/log/trace:/mongodb/data/log/trace
-    - <storagePath>/registry_collector/mongodb/data/db:/mongodb/data/db:rw
-    - <configPath>/registry_collector/dbconf/mongodb_linux.conf:/mongodb/conf/mongodb_linux.conf
-    - /etc/localtime:/etc/localtime:ro
 registry_collector_auth:
   privileged: true
   restart: always
   stdin_open: true
   tty: true
-  links:
-    - mongodb:mongodb
   image: <image_prefix>/registry_collector_auth:v1.0.4.114
   volumes:
     - <configPath>/registry_collector/config.conf:/opt/source/frame/conf/config.conf:rw
