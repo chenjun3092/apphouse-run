@@ -44,12 +44,12 @@ if [ ! -d ./install/config ]; then
 else
     if [ -f ${idir}/${serverCrt} ]; then
         #rm -rf ${tdir}/${serverCrt}
-        cp ${idir}/${serverCrt} ${tdir}/${serverCrt}
+        cp -rf ${idir}/${serverCrt} ${tdir}/${serverCrt}
     fi
 
     if [ -f ${idir}/${serverKey} ]; then
         #rm -rf ${tdir}/${serverKey}
-        cp ${idir}/${serverKey} ${tdir}/${serverKey}
+        cp -rf ${idir}/${serverKey} ${tdir}/${serverKey}
     fi
 fi
 
@@ -57,7 +57,7 @@ if [ ! -d ./install/storage ]; then
     mkdir -p ./install/storage
 else
     if [ -f ${idir}/${webLog} ]; then
-        cp ${idir}/${webLog} ${tdir}/${webLog}
+        cp -rf ${idir}/${webLog} ${tdir}/${webLog}
     fi
 fi
 

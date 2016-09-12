@@ -33,14 +33,17 @@ fi
 docker run --rm --privileged=true \
     -e HOST_IP=$IP \
     -e APPHOUSE_DEV=true \
-    -e HA=true \
-    -e MgIps="192.168.15.23:27017,192.168.15.24:27017,192.168.15.25:27017" \
-    -e HaHost="192.168.15.25" \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v /var/lib/docker:/var/lib/docker \
     -v /var/local/apphouse/config:/var/lib/registry_Deploy/install/config \
     -v /var/local/apphouse/storage:/var/lib/registry_Deploy/install/storage \
-    192.168.18.250:5002/apphouse/apphouse:v1.0.4.114
+    192.168.18.250:5002/apphouse/apphouse:v1.0.5.117
+    #-e HA=true \
+    #-e MgIps="192.168.15.23:27017,192.168.15.24:27017,192.168.15.25:27017" \
+    #-e HaHost="192.168.15.25" \
+    #-e HA=true \
+    #-e MgIps="192.168.15.23:27017,192.168.15.24:27017,192.168.15.25:27017" \
+    #-e HaHost="192.168.15.25" \
     #-e HA=true \
     #--entrypoint=/bin/bash \
     #192.168.18.250:5002/apphouse/apphouse:v1.0.2.106
