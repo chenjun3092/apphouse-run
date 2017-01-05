@@ -3,12 +3,13 @@ registry_collector_auth:
   restart: always
   stdin_open: true
   tty: true
-  image: <image_prefix>/registry_collector_auth:v1.0.5.117
+  image: <image_prefix>/registry_collector_auth:v1.0.5.119
   volumes:
     - <configPath>/registry_collector/config.conf:/opt/source/frame/conf/config.conf:rw
     - <configPath>/nginx_conf/ssl_auth:/opt/source/frame/ssl:rw
     - <configPath>/nginx_conf:/opt/source/frame/nginx_conf:rw
     - <storagePath>/registry_collector/Trace/:/opt/source/Trace:rw
+    - <storagePath>/registry_collector/Trace/logs/<AUTHHOSTNAME>web.log:/opt/source/Trace/logs/web.log:rw
     - <storagePath>/registry_collector/repository:/opt/source/repository:rw
     - <storagePath>/registry_collector/wwwroot:/opt/wwwroot:rw
     - <storagePath>:/.hidden/root:ro
@@ -26,7 +27,7 @@ registryui:
   links:
     - elasticsearch:elasticsearch
     - registry_collector_auth:collectorauth
-  image: <image_prefix>/registry_ui:v1.0.5.117
+  image: <image_prefix>/registry_ui:v1.0.5.119
   volumes:
     - <configPath>/nginx_conf/ssl_auth:/etc/nginx/conf.d/ssl_auth
     - <configPath>/nginx_conf/docker_registry.conf:/etc/nginx/conf.d/docker_registry.conf
@@ -39,11 +40,11 @@ registry:
   stdin_open: true
   tty: true
   ports:
-    - 5002:5002
+    - <RG_PORT>:5002
   links:
     - registryui:registryui
     - registry_collector_auth:collector_auth
-  image: <image_prefix>/registry:v1.0.5.117
+  image: <image_prefix>/registry:v1.0.5.119
   volumes:
     - <configPath>/registry/config.yml:/etc/docker/registry/config.yml:ro
     - <configPath>/nginx_conf/ssl_auth:/ssl:ro
@@ -54,21 +55,21 @@ elasticsearch:
   restart: always
   stdin_open: true
   tty: true
-  image: <image_prefix>/elasticsearch:v1.0.5.117
+  image: <image_prefix>/elasticsearch:v1.0.5.119
   volumes:
     - <configPath>/docker_el/elasticsearch/config/elasticsearch.yml:/elasticsearch/config/elasticsearch.yml:ro
-    - <storagePath>/docker_el/elasticsearch/storage:/elasticsearch/data:rw
+    - <storagePath>/docker_el/elasticsearch/<AUTHHOSTNAME>storage:/elasticsearch/data:rw
     - /etc/localtime:/etc/localtime:ro
 logstash:
   privileged: true
   restart: always
   stdin_open: true
   tty: true
-  image: <image_prefix>/logstash:v1.0.5.117
+  image: <image_prefix>/logstash:v1.0.5.119
   command: logstash -f /logstash/configurations/logstash.conf
   volumes:
     - <configPath>/docker_el/logstash/config/logstash.conf:/logstash/configurations/logstash.conf:ro
-    - <storagePath>/registry_collector/Trace/logs/web.log:/logstash/log/collector_auth_operation.log:ro
+    - <storagePath>/registry_collector/Trace/logs:/logstash/log:ro
     - /etc/localtime:/etc/localtime:ro
   links:
     - elasticsearch:elasticsearch

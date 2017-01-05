@@ -19,8 +19,10 @@ tdir=./Templates
 
 if [ "${HA}" == "true" ]; then
     rm -rf ${idir}/config/*
-    cp -rf ${tdir}/nginx_conf/* ${tdir}/config/nginx_conf
-    cp -rf ${tdir}/Registry_cfg/config.yml ${tdir}/config/registry/config.yml
+    #cp -rf ${tdir}/nginx_conf/* ${tdir}/config/nginx_conf
+    cp -rf ${tdir}/HTTPS_nginx_conf/* ${tdir}/config/nginx_conf
+    #cp -rf ${tdir}/Registry_cfg/config.yml ${tdir}/config/registry/config.yml
+    cp -rf ${tdir}/Registry_cfg/HTTPS_config.yml ${tdir}/config/registry/config.yml
     cp -rf ${tdir}/auth_cfg/HA-config.conf ${tdir}/config/registry_collector/config.conf
 else
     cp -rf ${tdir}/HTTPS_nginx_conf/* ${tdir}/config/nginx_conf
@@ -35,7 +37,21 @@ registryConf=./install/config/registry/config.yml
 
 serverCrt=config/nginx_conf/ssl_auth/server.crt
 serverKey=config/nginx_conf/ssl_auth/server.key
-webLog=storage/registry_collector/Trace/logs/web.log
+
+if [ "${HA}" == "true" ]; then
+    webLog=storage/registry_collector/Trace/logs/${HOSTNAME}web.log
+else
+    webLog=storage/registry_collector/Trace/logs/web.log
+fi
+
+if [ ! -f ${tdir}/${webLog} ]; then
+    touch ${tdir}/${webLog} 
+fi
+
+elasticsearch_storage="storage/docker_el/elasticsearch/${HOSTNAME}storage"
+if [ ! -d ${tdir}/${elasticsearch_storage} ]; then
+    mkdir -p ${elasticsearch_storage}  
+fi
 
 authConf=config/registry_collector/config.conf
 
@@ -56,80 +72,12 @@ fi
 if [ ! -d ./install/storage ]; then
     mkdir -p ./install/storage
 else
-    if [ -f ${idir}/${webLog} ]; then
-        cp -rf ${idir}/${webLog} ${tdir}/${webLog}
+    #if [ -f ${idir}/${webLog} ]; then
+    if [ -d ${idir}/storage/registry_collector/Trace/logs ]; then
+        #cp -rf ${idir}/${webLog} ${tdir}/${webLog}
+	cp -rf ${idir}/storage/registry_collector/Trace/logs ${tdir}/storage/registry_collector/Trace/logs
     fi
 fi
-
-#if [ -f ${idir}/config/.down ]; then
-
-    #cp ${idir}/config/.down ${idir}/docker-compose.yml
-    ##cd ./install
-    #cd ${idir}
-    ##docker-compose down
-    ##trap "" 1 2 3 15
-    #docker-compose stop
-    #sleep 1
-    #sleep 1
-    #sleep 1
-    #sleep 1
-    #sleep 1
-    #contain=`docker ps -a|grep Exited|awk '{print $1}'`
-    #sleep 1
-    #if [ "${contain}" ]; then
-        #docker "stop" ${contain}
-    #fi
-    #sleep 1
-    #contain=`docker ps -a -q --filter "status=exited"`
-    #sleep 1
-    #if [ "${contain}" ]; then
-        #while [ 0 -eq 0 ]
-        #do
-            #echo "Del contains ..."
-            #echo "${contain}"
-            #OK=`docker "rm" "-f" ${contain}`
-            ##echo $?
-            ##echo ${OK}
-            ## check and retry     
-            #if [ $? -eq 0 ]; then
-                #rm -rf ${idir}/config/.down
-                #echo "Del complete ..."
-                #break;
-            #else
-                #echo "Error occur, retry in 2 seconds ..."
-                #sleep 2
-            #fi
-        #done
-    #else
-        #echo "Can't stoping ${contain}. Please manually delete ..."
-    #fi
-
-##    contain=`docker ps -a|grep Exited|awk '{print $1}'`
-    ##if [ "${contain}" ]; then
-        ###docker "rm" "-f" ${contain}
-        ##while [ 0 -eq 0 ]
-        ##do
-            ##echo "Del contains ..."
-            ##echo "${contain}"
-            ##OK=`docker "rm" "-f" ${contain}`
-            ###echo $?
-            ###echo ${OK}
-            ### check and retry     
-            ##if [ $? -eq 0 ]; then
-                ##rm -rf ${idir}/config/.down
-                ##echo "Del complete ..."
-                ##break;
-            ##else
-                ##echo "Error occur, retry in 2 seconds ..."
-                ##sleep 2
-            ##fi
-        ##done
-##    fi
-    ##trap 1 2 3 15
-
-    #cd $DEPLOY_PATH
-    ##rm -rf ./install/config/docker-compose.yml
-#fi
 
 if [ -f ${idir}/${nginx80Conf} ]; then
     # get old setting
@@ -186,10 +134,13 @@ sed -i "s#<storagePath>#$STORAGE_PATH#g" $composeYml
 # sed -i "s#<LOGSTASH_IMAGE>#$LOGSTASH_IMAGE#g" $composeYml
 sed -i "s#<image_prefix>#$IMAGE_PREFIX#g" $composeYml
 sed -i "s#<UI_PORT>#$Ui_Port#g" $composeYml
+sed -i "s#<AUTHHOSTNAME>#${HOSTNAME}#g" $composeYml
+
 sed -i "s#<SSL_PORT>#$Ssl_Port#g" $registryConf
 sed -i "s#<UI_PORT>#$Ui_Port#g" $registryConf
 sed -i "s#<SSL_PORT>#$Ssl_Port#g" ${idir}/${nginx80Conf}
 sed -i "s#<SSL_PORT>#$Ssl_Port#g" $composeYml
+sed -i "s#<RG_PORT>#$Rg_Port#g" $composeYml
 sed -i "s#<MongodbIPPortList>#$replSetIp#g" ${idir}/${authConf}
 sed -i "s#<HAHostIP>#${HAHOSTIP}#g" ${idir}/${authConf}
 # sed -i "s#<CORE_PORT>#$Core_Port#g" $composeYml

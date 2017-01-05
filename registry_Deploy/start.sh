@@ -34,6 +34,7 @@ if [ "${HA}" == "true" ] && [ -z ${MgIps} ]; then
     echo "HA mode MgIps must be set up!"
     exit 1
 fi
+
 if [ "${HA}" == "true" ] && [ -z ${HaHost} ];then
     echo "HA mode HaHost must be set up!"
     exit 1
@@ -65,6 +66,13 @@ else
     Ssl_Port="443"
 fi
 
+if [ "$RG_PORT" ]; then
+    Rg_Port=$RG_PORT
+else
+    Rg_Port="5002"
+fi
+
+
 export CONFIG_PATH=$configPath
 export STORAGE_PATH=$storagePath
 export IMAGE_PREFIX=$image_prefix
@@ -73,10 +81,10 @@ export replSetIp=${MgIps}
 #export CA=${CA}
 export Ui_Port
 export Ssl_Port
+export Rg_Port
 export HAHOSTIP=${HaHost}
 
 # export Db_Port
-# export Rg_Port
 # export Core_Port
 # export Log_Port
 
